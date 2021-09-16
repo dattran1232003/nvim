@@ -3,6 +3,7 @@
 --- and plugins.
 -----------------------------------------------------------
 
+local exec = vim.api.nvim_exec
 local map = vim.api.nvim_set_keymap
 local default_opts = {noremap = true, silent = true}
 
@@ -78,6 +79,15 @@ map('n', '<c-space>', 'O<ESC>', { noremap = true })
 map('n', '<c-s>', ':w<cr>', { noremap = true })
 map('i', '<c-s>', '<ESC>:w<cr>', { noremap = true })
 
+-- sort line by length
+exec([[
+function! SortLines() range
+    execute a:firstline . "," . a:lastline . 's/^\(.*\)$/\=strdisplaywidth( submatch(0) ) . " " . submatch(0)/'
+    execute a:firstline . "," . a:lastline . 'sort n'
+    execute a:firstline . "," . a:lastline . 's/^\d\+\s//'
+endfunction
+]], false)
+map('v', '<Leader><Space>', ":call SortLines()<CR><CR>", default_opts)
 
 -----------------------------------------------------------
 -- Plugins shortcuts:
