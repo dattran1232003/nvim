@@ -20,10 +20,12 @@ require('keymaps')                  -- keymapsrequire('plug')
 require('plug')                     -- plugins
 
 --CUSTOM PLUGINS
+
+-- require('plugins/nvim-cmp')         -- autocomplete
+-- require('plugins/nvim-lspconfig')   -- language server configure
+
 require('plugins/lualine')          -- statusline
-require('plugins/nvim-cmp')         -- autocomplete
 require('plugins/vista')            -- tag viewer
-require('plugins/nvim-lspconfig')   -- language server configure
 require('plugins/fzf')              -- fugitive search
 
 require('plugins/nerdtree')         -- file management

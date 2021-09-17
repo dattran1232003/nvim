@@ -18,6 +18,8 @@ return require("packer").startup(function(use)
 
     use 'preservim/nerdtree' -- file management
     use 'preservim/nerdcommenter' -- commenter
+
+    use {'neoclide/coc.nvim', branch='release'} -- COC
     -- #must have packages
 
     use 'jose-elias-alvarez/nvim-lsp-ts-utils'
@@ -35,8 +37,9 @@ return require("packer").startup(function(use)
     use 'tanvirtin/monokai.nvim'
     use 'ryanoasis/vim-devicons'
 
-    use {'nvim-treesitter/nvim-treesitter', run='TSUpdate'}
     use 'tiagofumo/vim-nerdtree-syntax-highlight' -- syntax highlight for nerdtree
+    use {'nvim-treesitter/nvim-treesitter', run='TSUpdate'}
+    use 'nvim-treesitter/nvim-treesitter-angular'
 
     -- virtual text
     use 'haringsrob/nvim_context_vt' -- show end of function text
@@ -54,5 +57,7 @@ return require("packer").startup(function(use)
         'hrsh7th/vim-vsnip-integ',
       }
     }
+    use "SirVer/ultisnips"
+    use 'honza/vim-snippets'
 
 end)

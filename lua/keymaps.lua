@@ -89,6 +89,10 @@ endfunction
 ]], false)
 map('v', '<Leader><Space>', ":call SortLines()<CR><CR>", default_opts)
 
+map('n','<leader>d','"_d', default_opts) -- delete without copy to clipboard
+map("x", '<leader>d','"_d', default_opts)
+map("x", 'p', '"_dP', default_opts) -- patse without copy to clipboard
+
 -----------------------------------------------------------
 -- Plugins shortcuts:
 -----------------------------------------------------------

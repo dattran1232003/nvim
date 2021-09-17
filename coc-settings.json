@@ -1,0 +1,58 @@
+{
+  "coc.preferences.jumpCommand": "tab drop",
+  "coc.preferences.formatOnType":  true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "scss", "html", "sass",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "tsserver.formatOnType": true,
+
+  "eslint.packageManager": "yarn",
+
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.disableSuccessMessage": true,
+
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
+  "javascript.suggestionActions.enabled": false,
+
+  "emmet.excludeLanguages": ["css", "sass", "scss"],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "languageserver": {
+    "clang": {
+      "command": "ccls",
+      "filetypes": [
+        "c",
+        "cpp",
+        "objc",
+        "objcpp"
+      ],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
+  },
+
+  "angular.experimental-ivy": true,
+
+  "Lua.diagnostics.enable": true,
+  "Lua.diagnostics.globals": ["vim"]
+}
