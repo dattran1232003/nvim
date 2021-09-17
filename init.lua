@@ -33,3 +33,4 @@ require('plugins/nerdcommenter')    -- commenter
 
 require('plugins/nvim-treesitter')  -- hightlight better
 
+require('plugins/coc-nvim')         -- use coc.nvim, native LSP is not stable yet

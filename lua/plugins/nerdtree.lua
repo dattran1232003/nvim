@@ -2,7 +2,6 @@
 -- Nerdtree configuration file
 -----------------------------------------------------------
 local g = vim.g
-local opt = vim.opt
 local exec = vim.api.nvim_exec
 local map = vim.api.nvim_set_keymap
 
