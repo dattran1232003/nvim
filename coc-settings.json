@@ -27,6 +27,7 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
+
   "languageserver": {
     "clang": {
       "command": "ccls",

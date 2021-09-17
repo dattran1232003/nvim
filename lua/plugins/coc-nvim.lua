@@ -31,7 +31,7 @@ map('n', 'gi', '<Plug>(coc-implementation)', opts)
 map('n', 'gr', '<Plug>(coc-references)', opts)
 
 -- Hover
-map('n', 'K', ':call <SID>show_documentation()<CR>', { noremap=true, silent=true })
+map('n', 'K', ':call Show_documentation()<CR>', { noremap=true, silent=true })
 
 -- rename
 map('n', '<leader>rn', '<Plug>(coc-rename)', opts)

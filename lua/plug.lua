@@ -45,18 +45,18 @@ return require("packer").startup(function(use)
     use 'haringsrob/nvim_context_vt' -- show end of function text
 
     -- autocompletions & snippets
-    use {
-      "hrsh7th/nvim-cmp",
-      requires = {
-        "hrsh7th/vim-vsnip",
-        "hrsh7th/cmp-buffer",
-        'hrsh7th/cmp-nvim-lsp', -- LSP source for nvim-cmp
-        'saadparwaiz1/cmp_luasnip', -- Snippets source for nvim-cmp
-        'L3MON4D3/LuaSnip', -- snippet
-        'hrsh7th/vim-vsnip', -- vscode snippet
-        'hrsh7th/vim-vsnip-integ',
-      }
-    }
+    -- use {
+    --   "hrsh7th/nvim-cmp",
+    --   requires = {
+    --     "hrsh7th/vim-vsnip",
+    --     "hrsh7th/cmp-buffer",
+    --     'hrsh7th/cmp-nvim-lsp', -- LSP source for nvim-cmp
+    --     'saadparwaiz1/cmp_luasnip', -- Snippets source for nvim-cmp
+    --     'L3MON4D3/LuaSnip', -- snippet
+    --     'hrsh7th/vim-vsnip', -- vscode snippet
+    --     'hrsh7th/vim-vsnip-integ',
+    --   }
+    -- }
     use "SirVer/ultisnips"
     use 'honza/vim-snippets'
 

@@ -13,6 +13,9 @@ local default_opts = {noremap = true, silent = true}
 -- source lua file
 map('n', '<leader>sv', ':luafile ~/.config/nvim/init.lua<cr>', { noremap = true })
 
+-- select all
+map('n', 'vA', 'ggVG', default_opts)
+
 -- clear search highlighting
 map('n', '<leader>c', ':nohl<CR>', default_opts)
 
