@@ -28,6 +28,9 @@
     "javascript": "javascriptreact"
   },
 
+  "git.addGBlameToVirtualText": true,
+  "git.virtualTextPrefix": "    ",
+
   "languageserver": {
     "clang": {
       "command": "ccls",

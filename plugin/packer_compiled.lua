@@ -69,25 +69,9 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
-    loaded = true,
-    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/LuaSnip"
-  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/auto-pairs"
-  },
-  ["cmp-buffer"] = {
-    loaded = true,
-    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/cmp-buffer"
-  },
-  ["cmp-nvim-lsp"] = {
-    loaded = true,
-    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
-  },
-  cmp_luasnip = {
-    loaded = true,
-    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
   },
   ["coc.nvim"] = {
     loaded = true,
@@ -124,10 +108,6 @@ _G.packer_plugins = {
   nerdtree = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nerdtree"
-  },
-  ["nvim-cmp"] = {
-    loaded = true,
-    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nvim-cmp"
   },
   ["nvim-lsp-ts-utils"] = {
     loaded = true,
@@ -185,14 +165,6 @@ _G.packer_plugins = {
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/vim-vsnip"
-  },
-  ["vim-vsnip-integ"] = {
-    loaded = true,
-    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ"
   },
   ["vista.vim"] = {
     loaded = true,
