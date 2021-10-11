@@ -109,6 +109,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nerdtree"
   },
+  ["nginx.vim"] = {
+    loaded = true,
+    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nginx.vim"
+  },
   ["nvim-lsp-ts-utils"] = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nvim-lsp-ts-utils"

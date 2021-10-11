@@ -39,6 +39,10 @@ opt.smartcase = true          -- ignore lowercase for the whole pattern
 opt.wrap = false
 opt.linebreak = true
 
+-- enable vertical and horizontal line for cursor
+opt.cursorline = true
+opt.cursorcolumn = true
+
 -- remove whitespace on save
 cmd[[au BufWritePre * :%s/\s\+$//e]]
 

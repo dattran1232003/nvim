@@ -39,7 +39,13 @@ map('n', '<leader>rn', '<Plug>(coc-rename)', opts)
 -- action
 map('n', '<leader>do', '<Plug>(coc-codeaction)', opts)
 
--- Remap <C-f> and <C-b> for scroll float windows/popups.
+-- navigate chunks of current buffer
+map( 'n', '[g', '<Plug>(coc-git-prevchunk)', { noremap=false } )
+map('n' , ']g', '<Plug>(coc-git-nextchunk)', { noremap=false } )
+-- navigate conflicts of current buffer
+map('n' , '[c', '<Plug>(coc-git-prevconflict)', { noremap=false } )
+map('n' , ']c', '<Plug>(coc-git-nextconflict)', { noremap=false } )
+
 exec([[
 if has('nvim-0.4.0') || has('patch-8.2.0750')
   nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
@@ -56,6 +62,11 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
 -----------------------------------------------------------
 exec([[
 autocmd CursorHold * silent call CocActionAsync('highlight')
+]], false)
+
+
+exec([[
+autocmd FileType scss setl iskeyword+=@-@
 ]], false)
 
 -----------------------------------------------------------

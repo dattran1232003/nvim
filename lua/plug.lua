@@ -34,11 +34,12 @@ return require("packer").startup(function(use)
 
 
     -- syntax highlight, colors & icons
+    use "chr4/nginx.vim"
     use 'tanvirtin/monokai.nvim'
     use 'ryanoasis/vim-devicons'
 
     use 'tiagofumo/vim-nerdtree-syntax-highlight' -- syntax highlight for nerdtree
-    use {'nvim-treesitter/nvim-treesitter', run='TSUpdate'}
+    use {'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
     use 'nvim-treesitter/nvim-treesitter-angular'
 
     -- virtual text

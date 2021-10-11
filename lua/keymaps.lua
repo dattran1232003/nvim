@@ -96,6 +96,15 @@ map('n','<leader>d','"_d', default_opts) -- delete without copy to clipboard
 map("x", '<leader>d','"_d', default_opts)
 map("x", 'p', '"_dP', default_opts) -- patse without copy to clipboard
 
+
+-- Better search navigator
+map('n', 'n', 'nzz', default_opts)
+map('n', 'N', 'Nzz', default_opts)
+map('n', '*', '*zz', default_opts)
+map('n', '#', '#zz', default_opts)
+map('n', 'g*', 'g*zz', default_opts)
+map('n', 'g#', 'g#zz', default_opts)
+
 -----------------------------------------------------------
 -- Plugins shortcuts:
 -----------------------------------------------------------

@@ -1,8 +1,11 @@
 {
   "coc.preferences.jumpCommand": "tab drop",
-  "coc.preferences.formatOnType":  true,
+  "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": [
-    "scss", "html", "sass",
+    "scss",
+    "html",
+    "sass",
+    "json",
     "javascript",
     "javascriptreact",
     "typescript",
@@ -11,7 +14,7 @@
 
   "tsserver.formatOnType": true,
 
-  "eslint.packageManager": "yarn",
+  "eslint.packageManager": "npm",
 
   "prettier.useTabs": false,
   "prettier.tabWidth": 2,
@@ -34,12 +37,7 @@
   "languageserver": {
     "clang": {
       "command": "ccls",
-      "filetypes": [
-        "c",
-        "cpp",
-        "objc",
-        "objcpp"
-      ],
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
       "rootPatterns": [
         ".ccls",
         "compile_commands.json",
