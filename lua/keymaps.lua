@@ -105,6 +105,10 @@ map('n', '#', '#zz', default_opts)
 map('n', 'g*', 'g*zz', default_opts)
 map('n', 'g#', 'g#zz', default_opts)
 
+-- Jump to begin of line
+map('n', '0', '^', default_opts)
+map('n', '^', '0', default_opts)
+
 -----------------------------------------------------------
 -- Plugins shortcuts:
 -----------------------------------------------------------
