@@ -22,6 +22,10 @@ opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 opt.swapfile = false          -- don't use swapfile
 
 -----------------------------------------------------------
+-- Navigation
+-----------------------------------------------------------
+opt.scroll = 7
+-----------------------------------------------------------
 -- Neovim UI
 -----------------------------------------------------------
 opt.syntax = 'enable'         -- enable syntax highlighting
