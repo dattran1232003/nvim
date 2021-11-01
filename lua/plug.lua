@@ -37,13 +37,25 @@ return require("packer").startup(function(use)
     use "chr4/nginx.vim"
     use 'tanvirtin/monokai.nvim'
     use 'ryanoasis/vim-devicons'
+    use 'kyazdani42/nvim-web-devicons'
 
     use 'tiagofumo/vim-nerdtree-syntax-highlight' -- syntax highlight for nerdtree
     use {'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
     use 'nvim-treesitter/nvim-treesitter-angular'
+    -- use 'nvim-treesitter/nvim-tree-docs'
+
+    -- diff tools
+    use 'sindrets/diffview.nvim'
 
     -- virtual text
     use 'haringsrob/nvim_context_vt' -- show end of function text
+
+    --snippets
+    use "SirVer/ultisnips"
+    use 'honza/vim-snippets'
+
+    -- autocompletions
+    use {'kkoomen/vim-doge', run = function() vim.fn['doge#install()']() end}
 
     -- autocompletions & snippets
     -- use {
@@ -58,7 +70,5 @@ return require("packer").startup(function(use)
     --     'hrsh7th/vim-vsnip-integ',
     --   }
     -- }
-    use "SirVer/ultisnips"
-    use 'honza/vim-snippets'
 
 end)

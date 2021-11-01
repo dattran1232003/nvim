@@ -14,4 +14,8 @@ false)
 -----------------------------------------------------------
 -- Key bindings for FZF plugin.
 -----------------------------------------------------------
-map('n', '<c-p>', ':Files<CR>', { noremap=true })
+map('n', '<c-p>', '<cmd>:Files<CR>', { noremap=true})-- Search for file
+map('n', '<c-n>', '<cmd>:Rg<CR>', { noremap=true }) -- Search for word
+map('n', '<c-m>', '<cmd>:Lines<CR>', { noremap=true}) -- Search for word in file
+
+

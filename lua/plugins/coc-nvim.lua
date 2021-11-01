@@ -6,11 +6,11 @@ local g = vim.g
 local exec = vim.api.nvim_exec
 local map = vim.api.nvim_set_keymap
 
-local opts = { silent=true  }
+local opts = { noremap=false, silent=true  }
 
 g.coc_global_extensions = {
-  'coc-git',
   'coc-tsserver',
+  'coc-git',
   'coc-emmet',
   'coc-css',
   'coc-html',
@@ -25,6 +25,7 @@ g.coc_global_extensions = {
 map('n', '[g', '<Plug>(coc-diagnostic-prev)', opts)
 map('n', ']g', '<Plug>(coc-diagnostic-next)', opts)
 
+-- GoTo code navigation.
 map('n', 'gd', '<Plug>(coc-definition)', opts)
 map('n', 'gy', '<Plug>(coc-type-definition)', opts)
 map('n', 'gi', '<Plug>(coc-implementation)', opts)
@@ -37,7 +38,7 @@ map('n', 'K', ':call Show_documentation()<CR>', { noremap=true, silent=true })
 map('n', '<leader>rn', '<Plug>(coc-rename)', opts)
 
 -- action
-map('n', '<leader>do', '<Plug>(coc-codeaction)', opts)
+map('n', '<leader>ac', '<Plug>(coc-codeaction)', opts)
 
 -- navigate chunks of current buffer
 map( 'n', '[g', '<Plug>(coc-git-prevchunk)', { noremap=false } )
@@ -45,17 +46,6 @@ map('n' , ']g', '<Plug>(coc-git-nextchunk)', { noremap=false } )
 -- navigate conflicts of current buffer
 map('n' , '[c', '<Plug>(coc-git-prevconflict)', { noremap=false } )
 map('n' , ']c', '<Plug>(coc-git-nextconflict)', { noremap=false } )
-
-exec([[
-if has('nvim-0.4.0') || has('patch-8.2.0750')
-  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
-  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-  endif
-]], false)
 
 -----------------------------------------------------------
 -- Auto Commands
@@ -69,6 +59,17 @@ exec([[
 autocmd FileType scss setl iskeyword+=@-@
 ]], false)
 
+exec([[
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("nvim-0.5.0") || has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+
+]],false)
 -----------------------------------------------------------
 -- Custom func
 -----------------------------------------------------------
@@ -85,3 +86,4 @@ function! Show_documentation()
 endfunction
 
 ]], false)
+

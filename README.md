@@ -1,5 +1,6 @@
 ### Clone this repo into ~/.config/nvim
 ```bash
+mkdir -p ~/.config/nvim
 git clone git@github.com:dattran1232003/nvim.git ~/.config/nvim
 ```
 

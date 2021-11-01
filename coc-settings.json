@@ -14,7 +14,7 @@
 
   "tsserver.formatOnType": true,
 
-  "eslint.packageManager": "npm",
+  "eslint.packageManager": "yarn",
 
   "prettier.useTabs": false,
   "prettier.tabWidth": 2,

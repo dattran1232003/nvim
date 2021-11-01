@@ -62,14 +62,6 @@ cmp.setup {
     -- end,
   },
   sources = {
-    { name = 'luasnip' },
-    { name = 'buffer' },
-    { name = 'path' },
-    { name = 'calc' },
-    { name = 'nvim_lua' },
-    { name = 'nvim_lsp' },
-    { name = 'spell' },
-    { name = 'tags' },
     { name = 'ultisnips' }
   },
 }

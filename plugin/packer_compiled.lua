@@ -81,6 +81,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/completion-nvim"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/diffview.nvim"
+  },
   fzf = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/fzf"
@@ -129,6 +133,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nvim-treesitter-angular"
   },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+  },
   nvim_context_vt = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nvim_context_vt"
@@ -149,6 +157,10 @@ _G.packer_plugins = {
   ["vim-devicons"] = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/vim-devicons"
+  },
+  ["vim-doge"] = {
+    loaded = true,
+    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/vim-doge"
   },
   ["vim-nerdtree-syntax-highlight"] = {
     loaded = true,

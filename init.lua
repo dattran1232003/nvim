@@ -24,7 +24,7 @@ require('plug')                     -- plugins
 -- require('plugins/nvim-cmp')         -- autocomplete
 -- require('plugins/nvim-lspconfig')   -- language server configure
 
-require('plugins/lualine')          -- statusline
+require('plugins/plualine')          -- statusline
 require('plugins/vista')            -- tag viewer
 require('plugins/fzf')              -- fugitive search
 
@@ -34,3 +34,6 @@ require('plugins/nerdcommenter')    -- commenter
 require('plugins/nvim-treesitter')  -- hightlight better
 
 require('plugins/coc-nvim')         -- use coc.nvim, native LSP is not stable yet
+
+require('plugins/p_diffview')       -- git diff viewing tools
+
