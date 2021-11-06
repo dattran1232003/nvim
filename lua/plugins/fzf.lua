@@ -14,4 +14,4 @@ false)
 -----------------------------------------------------------
 -- Key bindings for FZF plugin.
 -----------------------------------------------------------
-map('n', '<c-p>', ':Files<CR>', { noremap=true })
+map('n', '<c-p>', ':GFiles<CR>', { noremap=true })
