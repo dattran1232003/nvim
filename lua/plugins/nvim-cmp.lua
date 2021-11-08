@@ -62,6 +62,5 @@ cmp.setup {
     -- end,
   },
   sources = {
-    { name = 'ultisnips' }
   },
 }

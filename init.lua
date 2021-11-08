@@ -37,3 +37,5 @@ require('plugins/coc-nvim')         -- use coc.nvim, native LSP is not stable ye
 
 require('plugins/p_diffview')       -- git diff viewing tools
 
+require('plugins/p_nvim-transparent')
+

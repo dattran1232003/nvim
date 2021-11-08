@@ -24,7 +24,7 @@ opt.swapfile = false          -- don't use swapfile
 -----------------------------------------------------------
 -- Navigation
 -----------------------------------------------------------
-opt.scroll = 7                -- scroll height (half page is default)
+opt.scroll = 10                -- scroll height (half page is default)
 
 -----------------------------------------------------------
 -- Neovim UI
@@ -107,7 +107,7 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 -- Colorscheme
 -----------------------------------------------------------
 opt.termguicolors = true      -- enable 24-bit RGB colors
-cmd[[colorscheme monokai]]    -- set colorscheme
+cmd[[colorscheme monokai_pro]]    -- set colorscheme
 
 -- cursor line block color
 -- ref: https://stackoverflow.com/questions/6230490/how-i-can-change-cursor-color-in-color-scheme-vim
@@ -123,6 +123,15 @@ exec([[
   " use \003]12;gray\007 for gnome-terminal
 endif
 ]], false)
+
+exec([[
+if has('autocmd')
+  augroup coloroverride
+  autocmd!
+  autocmd ColorScheme * highlight LineNr  ctermfg=DarkGrey guifg=DarkGrey " Override LineNr
+  augroup END
+  endif
+]],false)
 
 -----------------------------------------------------------
 -- Tabs, indent

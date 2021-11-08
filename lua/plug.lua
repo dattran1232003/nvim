@@ -38,6 +38,7 @@ return require("packer").startup(function(use)
     use 'tanvirtin/monokai.nvim'
     use 'ryanoasis/vim-devicons'
     use 'kyazdani42/nvim-web-devicons'
+    use 'xiyaowong/nvim-transparent'
 
     use 'tiagofumo/vim-nerdtree-syntax-highlight' -- syntax highlight for nerdtree
     use {'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
@@ -55,7 +56,7 @@ return require("packer").startup(function(use)
     use 'honza/vim-snippets'
 
     -- autocompletions
-    use {'kkoomen/vim-doge', run = function() vim.fn['doge#install()']() end}
+    use {'kkoomen/vim-doge', run = vim.fn['doge#install']}
 
     -- autocompletions & snippets
     -- use {
