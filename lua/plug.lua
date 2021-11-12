@@ -5,8 +5,8 @@ return require("packer").startup(function(use)
 
     -- must have packages
     use "neovim/nvim-lspconfig" -- lsp package
-    use 'nvim-lua/completion-nvim' -- autocomplete
 
+    use 'nvim-lua/plenary.nvim'
 
     use 'christoomey/vim-tmux-navigator' -- switch between panes
 
@@ -22,7 +22,7 @@ return require("packer").startup(function(use)
     use {'neoclide/coc.nvim', branch='release'} -- COC
     -- #must have packages
 
-    use 'jose-elias-alvarez/nvim-lsp-ts-utils'
+    -- use 'jose-elias-alvarez/nvim-lsp-ts-utils'
 
     -- fugitive seach
     use {'junegunn/fzf', run = function() vim.fn['fzf#install']() end}
@@ -47,9 +47,6 @@ return require("packer").startup(function(use)
 
     -- diff tools
     use 'sindrets/diffview.nvim'
-
-    -- virtual text
-    use 'haringsrob/nvim_context_vt' -- show end of function text
 
     --snippets
     use "SirVer/ultisnips"

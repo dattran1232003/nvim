@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
-  ["completion-nvim"] = {
-    loaded = true,
-    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/completion-nvim",
-    url = "https://github.com/nvim-lua/completion-nvim"
-  },
   ["diffview.nvim"] = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/diffview.nvim",
@@ -129,11 +124,6 @@ _G.packer_plugins = {
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nginx.vim",
     url = "https://github.com/chr4/nginx.vim"
   },
-  ["nvim-lsp-ts-utils"] = {
-    loaded = true,
-    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nvim-lsp-ts-utils",
-    url = "https://github.com/jose-elias-alvarez/nvim-lsp-ts-utils"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -158,11 +148,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
-  },
-  nvim_context_vt = {
-    loaded = true,
-    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/nvim_context_vt",
-    url = "https://github.com/haringsrob/nvim_context_vt"
   },
   ["packer.nvim"] = {
     loaded = false,
