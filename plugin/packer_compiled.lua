@@ -155,6 +155,11 @@ _G.packer_plugins = {
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/opt/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
   supertab = {
     loaded = true,
     path = "/Users/ant-tech/.local/share/nvim/site/pack/packer/start/supertab",

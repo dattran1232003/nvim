@@ -3,8 +3,7 @@
 --- General Neovim settings
 -----------------------------------------------------------
 
------------------------------------------------------------
--- Neovim API aliases
+----------------------------------------------------------- Neovim API aliases
 -----------------------------------------------------------
 --local map = vim.api.nvim_set_keymap  -- set global keymap
 local cmd = vim.cmd             -- execute Vim commands
@@ -20,11 +19,6 @@ g.mapleader = '-'             -- change leader
 -- opt.mouse = 'a'               -- enable mouse support
 opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 opt.swapfile = false          -- don't use swapfile
-
------------------------------------------------------------
--- Navigation
------------------------------------------------------------
-opt.scroll = 10                -- scroll height (half page is default)
 
 -----------------------------------------------------------
 -- Neovim UI
@@ -159,6 +153,16 @@ g.indentLine_char = '|'       -- set indentLine character
 -- disable IndentLine for markdown files (avoid concealing)
 cmd[[autocmd FileType markdown let g:indentLine_enabled=0]]
 
+
+-----------------------------------------------------------
+-- Vertical navigation height
+-----------------------------------------------------------
+exec([[
+augroup SetScrollHeight
+autocmd!
+autocmd BufEnter * silent! set scroll=10
+augroup end
+]],false)
 -----------------------------------------------------------
 -- Autocompletion
 -----------------------------------------------------------

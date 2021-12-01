@@ -11,6 +11,7 @@ Maintainer: Brainf+ck
 Website: https://github.com/brainfucksec/neovim-lua
 --]]
 
+
 -----------------------------------------------------------
 -- Import Lua modules
 -----------------------------------------------------------
@@ -38,4 +39,5 @@ require('plugins/coc-nvim')         -- use coc.nvim, native LSP is not stable ye
 require('plugins/p_diffview')       -- git diff viewing tools
 
 require('plugins/p_nvim-transparent')
+
 

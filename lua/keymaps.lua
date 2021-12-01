@@ -109,6 +109,10 @@ map('n', 'g#', 'g#zz', default_opts)
 map('n', '0', '^', default_opts)
 map('n', '^', '0', default_opts)
 
+-- horizontal navigation
+map('n', 'H', 'zH', default_opts)
+map('n', 'L', 'zL', default_opts)
+
 -----------------------------------------------------------
 -- Plugins shortcuts:
 -----------------------------------------------------------
