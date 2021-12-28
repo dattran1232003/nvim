@@ -5,6 +5,8 @@
 
 local exec = vim.api.nvim_exec
 local map = vim.api.nvim_set_keymap
+local opt = vim.opt             -- lobal/buffer/windows-scoped options
+local g = vim.g                 -- global variables
 local default_opts = {noremap = true, silent = true}
 
 -----------------------------------------------------------
@@ -112,6 +114,10 @@ map('n', '^', '0', default_opts)
 -- horizontal navigation
 map('n', 'H', 'zH', default_opts)
 map('n', 'L', 'zL', default_opts)
+
+-- disable select (visual mode) when drag mouse
+map('n', '<LeftDrag>', '<LeftMouse>',  default_opts)
+
 
 -----------------------------------------------------------
 -- Plugins shortcuts:

@@ -16,7 +16,7 @@ local opt = vim.opt             -- lobal/buffer/windows-scoped options
 -- General
 -----------------------------------------------------------
 g.mapleader = '-'             -- change leader
--- opt.mouse = 'a'               -- enable mouse support
+opt.mouse = 'nicr'            -- enable mouse for all modes except visual
 opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 opt.swapfile = false          -- don't use swapfile
 
