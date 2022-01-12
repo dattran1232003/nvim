@@ -17,7 +17,7 @@ return require("packer").startup(function(use)
     use 'tpope/vim-surround' -- work with bracket, html tags,...
 
     use 'preservim/nerdtree' -- file management
-    use 'preservim/nerdcommenter' -- commenter
+    use "terrortylor/nvim-comment" -- commenter
 
     use {'neoclide/coc.nvim', branch='release'} -- COC
     -- #must have packages
