@@ -73,7 +73,10 @@ map('n', '<Leader>tm', ':tabmove<CR>', { noremap = true })
 map('n', '<Leader>tn', ':tabnew .<CR>', { noremap = true })
 map('n', '<Leader>n' , ':tabnext<CR>', { noremap = true })
 map('n', '<Leader>p' , ':tabprevious<CR>', { noremap = true })
-map('n', '<Leader>td', ':DuplicateTabpane<CR>', { noremap = true })
+
+-- for Debian linux
+map('n', '<C-t>', ':tabnew .<CR>', { noremap = true })
+map('n', '<C-w>', ':tabclose<CR>', { noremap = true })
 
 -- switch tab using leander + number
 map('n', '<leader>1', '1gt', { noremap=true })
