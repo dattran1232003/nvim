@@ -5,6 +5,8 @@
 
 local exec = vim.api.nvim_exec
 local map = vim.api.nvim_set_keymap
+local opt = vim.opt             -- lobal/buffer/windows-scoped options
+local g = vim.g                 -- global variables
 local default_opts = {noremap = true, silent = true}
 
 -----------------------------------------------------------
@@ -54,6 +56,16 @@ map('i', '˚', '<Esc>:m .-2<CR>==gi', { noremap = true })
 map ('v', '∆', ":m '>+1<CR>gv=gv", { noremap = true })
 map ('v', '˚', ":m '<-2<CR>gv=gv", { noremap = true })
 
+-- for Debian linux
+map('n', '<M-j>', ':m .+1<CR>==', { noremap = true })
+map('n', '<M-k>', ':m .-2<CR>==', { noremap = true })
+
+map('i', '<M-j>', '<Esc>:m .+1<CR>==gi', { noremap = true })
+map('i', '<M-k>', '<Esc>:m .-2<CR>==gi', { noremap = true })
+
+map ('v', '<M-j>', ":m '>+1<CR>gv=gv", { noremap = true })
+map ('v', '<M-k>', ":m '<-2<CR>gv=gv", { noremap = true })
+
 -- tabs
 map('n', '<Leader>te', ':tabe%:h<CR>', { noremap = true })
 map('n', '<Leader>tc', ':tabclose<CR>', { noremap = true })
@@ -61,7 +73,10 @@ map('n', '<Leader>tm', ':tabmove<CR>', { noremap = true })
 map('n', '<Leader>tn', ':tabnew .<CR>', { noremap = true })
 map('n', '<Leader>n' , ':tabnext<CR>', { noremap = true })
 map('n', '<Leader>p' , ':tabprevious<CR>', { noremap = true })
-map('n', '<Leader>td', ':DuplicateTabpane<CR>', { noremap = true })
+
+-- for Debian linux
+map('n', '<C-t>', ':tabnew .<CR>', { noremap = true })
+map('n', '<C-w>', ':tabclose<CR>', { noremap = true })
 
 -- switch tab using leander + number
 map('n', '<leader>1', '1gt', { noremap=true })
@@ -73,6 +88,17 @@ map('n', '<leader>6', '6gt', { noremap=true })
 map('n', '<leader>7', '7gt', { noremap=true })
 map('n', '<leader>8', '8gt', { noremap=true })
 map('n', '<leader>9', '9gt', { noremap=true })
+
+-- for debian linux (pop_os, ubuntu,...)
+map('n', '<M-1>', '1gt', { noremap=true })
+map('n', '<M-3>', '3gt', { noremap=true })
+map('n', '<M-2>', '2gt', { noremap=true })
+map('n', '<M-4>', '4gt', { noremap=true })
+map('n', '<M-5>', '5gt', { noremap=true })
+map('n', '<M-6>', '6gt', { noremap=true })
+map('n', '<M-7>', '7gt', { noremap=true })
+map('n', '<M-8>', '8gt', { noremap=true })
+map('n', '<M-9>', '9gt', { noremap=true })
 
 -- new line in normal mode
 map('n',   '<space>', 'o<ESC>', { noremap = true })
@@ -112,6 +138,10 @@ map('n', '^', '0', default_opts)
 -- horizontal navigation
 map('n', 'H', 'zH', default_opts)
 map('n', 'L', 'zL', default_opts)
+
+-- disable select (visual mode) when drag mouse
+map('n', '<LeftDrag>', '<LeftMouse>',  default_opts)
+
 
 -----------------------------------------------------------
 -- Plugins shortcuts:
