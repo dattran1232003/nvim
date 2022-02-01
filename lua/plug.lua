@@ -45,7 +45,10 @@ return require("packer").startup(function(use)
     use 'nvim-treesitter/nvim-treesitter-angular'
     -- use 'nvim-treesitter/nvim-tree-docs'
 
-    -- diff tools
+    -- markdown preview
+    use { 'iamcco/markdown-preview.nvim', run='cd app && yarn install' }
+
+    -- git diff tools
     use 'sindrets/diffview.nvim'
 
     --snippets
