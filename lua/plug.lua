@@ -35,10 +35,12 @@ return require("packer").startup(function(use)
 
     -- syntax highlight, colors & icons
     use "chr4/nginx.vim"
-    use 'tanvirtin/monokai.nvim'
     use 'ryanoasis/vim-devicons'
     use 'kyazdani42/nvim-web-devicons'
     use 'xiyaowong/nvim-transparent'
+    use { "ellisonleao/gruvbox.nvim" }
+
+    use 'tanvirtin/monokai.nvim'
 
     use 'tiagofumo/vim-nerdtree-syntax-highlight' -- syntax highlight for nerdtree
     use {'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
@@ -54,6 +56,9 @@ return require("packer").startup(function(use)
 
     -- autocompletions
     use {'kkoomen/vim-doge', run = vim.fn['doge#install']}
+
+    -- image viewer
+    use {'edluffy/hologram.nvim'}
 
     -- autocompletions & snippets
     -- use {

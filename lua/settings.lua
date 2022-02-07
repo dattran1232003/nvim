@@ -101,7 +101,8 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 -- Colorscheme
 -----------------------------------------------------------
 opt.termguicolors = true      -- enable 24-bit RGB colors
-cmd[[colorscheme monokai_pro]]    -- set colorscheme
+vim.o.background = "dark"     -- or "light" option
+cmd[[colorscheme gruvbox]]    -- set colorscheme
 
 -- cursor line block color
 -- ref: https://stackoverflow.com/questions/6230490/how-i-can-change-cursor-color-in-color-scheme-vim

@@ -94,6 +94,16 @@ _G.packer_plugins = {
     path = "/home/dattran/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/home/dattran/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  ["hologram.nvim"] = {
+    loaded = true,
+    path = "/home/dattran/.local/share/nvim/site/pack/packer/start/hologram.nvim",
+    url = "https://github.com/edluffy/hologram.nvim"
+  },
   indentLine = {
     loaded = true,
     path = "/home/dattran/.local/share/nvim/site/pack/packer/start/indentLine",
