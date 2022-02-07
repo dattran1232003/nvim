@@ -38,7 +38,7 @@ return require("packer").startup(function(use)
     use 'ryanoasis/vim-devicons'
     use 'kyazdani42/nvim-web-devicons'
     use 'xiyaowong/nvim-transparent'
-    use { "ellisonleao/gruvbox.nvim" }
+    use { "morhetz/gruvbox" }
 
     use 'tanvirtin/monokai.nvim'
 

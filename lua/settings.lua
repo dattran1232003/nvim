@@ -101,7 +101,11 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 -- Colorscheme
 -----------------------------------------------------------
 opt.termguicolors = true      -- enable 24-bit RGB colors
-vim.o.background = "dark"     -- or "light" option
+
+-- configs for gruvbox theme
+g.gruvbox_italic=1
+g.gruvbox_invert_selection=0
+
 cmd[[colorscheme gruvbox]]    -- set colorscheme
 
 -- cursor line block color
