@@ -94,10 +94,10 @@ _G.packer_plugins = {
     path = "/home/dattran/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
-  ["gruvbox.nvim"] = {
+  gruvbox = {
     loaded = true,
-    path = "/home/dattran/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
+    path = "/home/dattran/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
   },
   ["hologram.nvim"] = {
     loaded = true,
