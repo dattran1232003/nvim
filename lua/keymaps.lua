@@ -74,6 +74,11 @@ map('n', '<Leader>tn', ':tabnew .<CR>', { noremap = true })
 map('n', '<Leader>n' , ':tabnext<CR>', { noremap = true })
 map('n', '<Leader>p' , ':tabprevious<CR>', { noremap = true })
 
+
+-- for Debian linux
+map('n', '<M-t>', ':tabnew .<CR>', { noremap=true, silent=true })
+map('n', '<M-w>', ':tabclose<CR>', { noremap=true, silent=true })
+
 -- switch tab using leander + number
 map('n', '<leader>1', '1gt', { noremap=true })
 map('n', '<leader>3', '3gt', { noremap=true })
