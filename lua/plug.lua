@@ -9,6 +9,7 @@ return require("packer").startup(function(use)
     use 'nvim-lua/plenary.nvim'
 
     use 'christoomey/vim-tmux-navigator' -- switch between panes
+    -- use {'knubie/vim-kitty-navigator', run='cp ./*.py ~/.config/kitty/'} -- switch between kitty panes
 
     use 'liuchengxu/vista.vim' -- View and search LSP symbols, tags in Vim/NeoVim.
 

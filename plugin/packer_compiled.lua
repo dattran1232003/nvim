@@ -195,6 +195,11 @@ _G.packer_plugins = {
     path = "/home/anttech/.local/share/nvim/site/pack/packer/start/vim-doge",
     url = "https://github.com/kkoomen/vim-doge"
   },
+  ["vim-kitty-navigator"] = {
+    loaded = true,
+    path = "/home/anttech/.local/share/nvim/site/pack/packer/start/vim-kitty-navigator",
+    url = "https://github.com/knubie/vim-kitty-navigator"
+  },
   ["vim-nerdtree-syntax-highlight"] = {
     loaded = true,
     path = "/home/anttech/.local/share/nvim/site/pack/packer/start/vim-nerdtree-syntax-highlight",
