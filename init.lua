@@ -41,3 +41,4 @@ require('plugins/p_nvim-transparent')
 require('plugins/markdown-preview') -- markdown preview
 require('plugins/p_supertab')       -- supertab
 require('plugins/nvim-comment')     -- commenter
+require('plugins/nvim-dap')         -- debug tools
