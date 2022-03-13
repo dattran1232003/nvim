@@ -9,6 +9,7 @@ return require("packer").startup(function(use)
     use 'nvim-lua/plenary.nvim'
 
     use 'christoomey/vim-tmux-navigator' -- switch between panes
+    -- use {'knubie/vim-kitty-navigator', run='cp ./*.py ~/.config/kitty/'} -- switch between kitty panes
 
     use 'liuchengxu/vista.vim' -- View and search LSP symbols, tags in Vim/NeoVim.
 
@@ -21,6 +22,7 @@ return require("packer").startup(function(use)
 
     use {'neoclide/coc.nvim', branch='release'} -- COC
     use 'neoclide/jsonc.vim'
+    use 'mfussenegger/nvim-dap' -- debug
     -- #must have packages
 
     -- use 'jose-elias-alvarez/nvim-lsp-ts-utils'
