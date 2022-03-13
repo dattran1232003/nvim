@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/dattran/.local/share/nvim/site/pack/packer/start/indentLine",
     url = "https://github.com/Yggdroot/indentLine"
   },
+  ["jsonc.vim"] = {
+    loaded = true,
+    path = "/home/dattran/.local/share/nvim/site/pack/packer/start/jsonc.vim",
+    url = "https://github.com/neoclide/jsonc.vim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/dattran/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -233,5 +238,6 @@ if should_profile then save_profiles() end
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end

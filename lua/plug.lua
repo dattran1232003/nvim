@@ -20,6 +20,7 @@ return require("packer").startup(function(use)
     use "terrortylor/nvim-comment" -- commenter
 
     use {'neoclide/coc.nvim', branch='release'} -- COC
+    use 'neoclide/jsonc.vim'
     -- #must have packages
 
     -- use 'jose-elias-alvarez/nvim-lsp-ts-utils'
