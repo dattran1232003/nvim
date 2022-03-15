@@ -102,8 +102,8 @@ map('n', '<M-8>', '8gt', { noremap=true })
 map('n', '<M-9>', '9gt', { noremap=true })
 
 -- new line in normal mode
-map('n',   '<space>', 'o<ESC>', { noremap = true })
-map('n', '<c-space>', 'O<ESC>', { noremap = true })
+-- map('n',   '<space>', 'o<ESC>', { noremap = true })
+-- map('n', '<c-space>', 'O<ESC>', { noremap = true })
 
 -- quick save
 map('n', '<c-s>', ':w<cr>', { noremap = true })
