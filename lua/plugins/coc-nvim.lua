@@ -41,7 +41,7 @@ map('n', 'K', ':call Show_documentation()<CR>', { noremap=true, silent=true })
 map('n', '<leader>rn', '<Plug>(coc-rename)', opts)
 
 -- action
-map('n', '<leader>ac', '<Plug>(coc-codeaction)', opts)
+map('n', '<leader>a', '<Plug>(coc-codeaction)', opts)
 
 -- navigate chunks of current buffer
 map( 'n', '[g', '<Plug>(coc-git-prevchunk)', { noremap=false } )
