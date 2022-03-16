@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "/home/anttech/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
-  gruvbox = {
-    loaded = true,
-    path = "/home/anttech/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
-  },
   ["hologram.nvim"] = {
     loaded = true,
     path = "/home/anttech/.local/share/nvim/site/pack/packer/start/hologram.nvim",
@@ -124,11 +119,6 @@ _G.packer_plugins = {
     path = "/home/anttech/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
-  ["monokai.nvim"] = {
-    loaded = true,
-    path = "/home/anttech/.local/share/nvim/site/pack/packer/start/monokai.nvim",
-    url = "https://github.com/tanvirtin/monokai.nvim"
-  },
   nerdtree = {
     loaded = true,
     path = "/home/anttech/.local/share/nvim/site/pack/packer/start/nerdtree",
@@ -138,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/anttech/.local/share/nvim/site/pack/packer/start/nginx.vim",
     url = "https://github.com/chr4/nginx.vim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/anttech/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nvim-comment"] = {
     loaded = true,

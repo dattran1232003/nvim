@@ -64,6 +64,9 @@ dap.configurations.typescriptreact = { -- change to typescript if needed
     }
 }
 
+-- styles
+ require('dap')
+vim.fn.sign_define('DapBreakpoint', {text='🛑', texthl='', linehl='', numhl=''})
 
 -- key mappings
 

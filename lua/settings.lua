@@ -104,10 +104,10 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 opt.termguicolors = true      -- enable 24-bit RGB colors
 
 -- configs for gruvbox theme
-g.gruvbox_italic=1
-g.gruvbox_invert_selection=0
+-- g.gruvbox_italic=1
+-- g.gruvbox_invert_selection=0
 
-cmd[[colorscheme gruvbox]]    -- set colorscheme
+cmd[[colorscheme duskfox]]    -- set colorscheme
 
 -- cursor line block color
 -- ref: https://stackoverflow.com/questions/6230490/how-i-can-change-cursor-color-in-color-scheme-vim
