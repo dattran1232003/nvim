@@ -23,6 +23,14 @@ return require("packer").startup(function(use)
     use {'neoclide/coc.nvim', branch='release'} -- COC
     use 'neoclide/jsonc.vim'
     use 'mfussenegger/nvim-dap' -- debug
+    use {
+      'nvim-telescope/telescope-dap.nvim',
+      requires = {
+        'nvim-telescope/telescope.nvim',
+         'nvim-lua/plenary.nvim'
+        }
+      }
+
     -- #must have packages
 
     -- use 'jose-elias-alvarez/nvim-lsp-ts-utils'

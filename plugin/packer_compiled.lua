@@ -190,6 +190,16 @@ _G.packer_plugins = {
     path = "/home/anttech/.local/share/nvim/site/pack/packer/start/supertab",
     url = "https://github.com/ervandew/supertab"
   },
+  ["telescope-dap.nvim"] = {
+    loaded = true,
+    path = "/home/anttech/.local/share/nvim/site/pack/packer/start/telescope-dap.nvim",
+    url = "https://github.com/nvim-telescope/telescope-dap.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/anttech/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ultisnips = {
     loaded = true,
     path = "/home/anttech/.local/share/nvim/site/pack/packer/start/ultisnips",
