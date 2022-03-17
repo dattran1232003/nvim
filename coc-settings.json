@@ -9,7 +9,9 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "lua",
+    "jsonc"
   ],
 
   "tsserver.formatOnType": true,
@@ -20,7 +22,6 @@
   "prettier.tabWidth": 2,
   "prettier.semi": false,
   "prettier.singleQuote": true,
-  "prettier.disableSuccessMessage": true,
 
   "javascript.validate.enable": true,
   "typescript.validate.enable": true,
