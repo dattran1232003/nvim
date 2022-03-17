@@ -6,7 +6,7 @@
 --- https://github.com/hoob3rt/lualine.nvim
 require('lualine').setup {
   options = {
-    theme = 'gruvbox',
+    theme = 'auto',
     icons_enabled = true,
     extensions = {'nerdtree'},
   };
