@@ -27,8 +27,8 @@ g.coc_global_extensions = {
 -----------------------------------------------------------
 -- Coc Neovim key bindings
 -----------------------------------------------------------
-map('n', '[g', '<Plug>(coc-diagnostic-prev)', opts)
-map('n', ']g', '<Plug>(coc-diagnostic-next)', opts)
+map('n', '<leader>k', '<Plug>(coc-diagnostic-prev)', opts)
+map('n', '<leader>j', '<Plug>(coc-diagnostic-next)', opts)
 
 -- GoTo code navigation.
 map('n', 'gd', '<Plug>(coc-definition)', opts)
