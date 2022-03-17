@@ -22,6 +22,14 @@ return require("packer").startup(function(use)
 
     use {'neoclide/coc.nvim', branch='release'} -- COC
     use 'mfussenegger/nvim-dap' -- debug
+    use {
+      'nvim-telescope/telescope-dap.nvim',
+      requires = {
+        'nvim-telescope/telescope.nvim',
+         'nvim-lua/plenary.nvim'
+        }
+      }
+
     -- #must have packages
 
     -- use 'jose-elias-alvarez/nvim-lsp-ts-utils'
@@ -40,9 +48,10 @@ return require("packer").startup(function(use)
     use 'ryanoasis/vim-devicons'
     use 'kyazdani42/nvim-web-devicons'
     use 'xiyaowong/nvim-transparent'
-    use { "morhetz/gruvbox" }
+    -- use { "morhetz/gruvbox" }
 
-    use 'tanvirtin/monokai.nvim'
+    -- use 'tanvirtin/monokai.nvim'
+    use "EdenEast/nightfox.nvim"
 
     use 'tiagofumo/vim-nerdtree-syntax-highlight' -- syntax highlight for nerdtree
     use {'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
