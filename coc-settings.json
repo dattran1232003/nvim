@@ -10,8 +10,7 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "lua",
-    "jsonc"
+    "lua"
   ],
 
   "tsserver.formatOnType": true,

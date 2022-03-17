@@ -9,6 +9,8 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap=false, silent=true  }
 
 g.coc_global_extensions = {
+  'coc-lua',
+  'coc-angular',
   'coc-pyright',
   'coc-tsserver',
   'coc-git',
