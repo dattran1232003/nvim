@@ -6,7 +6,7 @@ g.fzf_preview_window = {'right:50%', 'ctrl-/'}
 
 vim.api.nvim_exec(
 [[
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 let g:fzf_action = { 'ctrl-t': 'tab split', 'ctrl-i': 'split', 'ctrl-s': 'vsplit' }
 ]],
 false)
