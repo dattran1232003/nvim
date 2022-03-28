@@ -72,9 +72,9 @@ vim.fn.sign_define('DapBreakpoint', {text='🛑', texthl='', linehl='', numhl=''
 
 local opts = { noremap=true }
 
-map('n', '<learder>dh', ':lua require("dap").toggle_breakpoint()<CR>', opts)
-map('n', '<leader>dh', ':lua require"dap".toggle_breakpoint()<CR>', opts)
-map('n', '<leader>dH', ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", opts)
+map('n', '<leader>dt', ':lua require"dap".toggle_breakpoint()<CR>', opts)
+map('n', '<leader>dG', ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", opts)
+map('n', '<leader>dL', ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", opts)
 map('n', '<c-k>', ':lua require"dap".step_out()<CR>', opts)
 map('n', "<c-l>", ':lua require"dap".step_into()<CR>', opts)
 map('n', '<c-j>', ':lua require"dap".step_over()<CR>', opts)
