@@ -17,4 +17,4 @@ false)
 -----------------------------------------------------------
 map('n', '<c-p>', ':Files<CR>', { noremap=true })
 map('n', '<c-n>', '<cmd>:Rg<CR>', { noremap=true }) -- Search for word
-map('n', '<c-m>', '<cmd>:BLines<CR>', { noremap=true }) -- Search for word in current buffer
+map('n', '<CR>', '<cmd>:BLines<CR>', { noremap=true }) -- Search for word in current buffer
