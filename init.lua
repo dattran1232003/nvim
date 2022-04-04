@@ -43,3 +43,4 @@ require('plugins/p_supertab')       -- supertab
 require('plugins/nvim-comment')     -- commenter
 require('plugins/nvim-dap')         -- debug tools
 require('plugins/telescope-nvim')   -- telescope
+require('plugins/indentLine')       -- indentLine
