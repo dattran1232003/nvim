@@ -38,7 +38,7 @@ return require("packer").startup(function(use)
     use {'junegunn/fzf', run = function() vim.fn['fzf#install']() end}
     use 'junegunn/fzf.vim'
 
-    use 'Yggdroot/indentLine' -- show vertical line
+    -- use 'Yggdroot/indentLine' -- show vertical line
     use 'hoob3rt/lualine.nvim'
     use 'ervandew/supertab'        -- easy use tab
 
