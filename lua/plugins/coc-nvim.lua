@@ -21,7 +21,8 @@ g.coc_global_extensions = {
   'coc-yank',
   'coc-docthis',
   'coc-prettier',
-  'coc-eslint'
+  'coc-eslint',
+  'coc-ccls',
 }
 
 -----------------------------------------------------------

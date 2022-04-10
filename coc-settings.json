@@ -11,7 +11,9 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "lua"
+    "lua",
+    "c",
+    "cpp"
   ],
 
   "tsserver.formatOnType": true,
@@ -37,7 +39,7 @@
   "git.virtualTextPrefix": "    ",
 
   "languageserver": {
-    "clang": {
+    "ccls": {
       "command": "ccls",
       "filetypes": ["c", "cpp", "objc", "objcpp"],
       "rootPatterns": [
@@ -54,8 +56,6 @@
       }
     }
   },
-
-  "angular.experimental-ivy": true,
 
   "Lua.diagnostics.enable": true,
   "Lua.diagnostics.globals": ["vim"]
