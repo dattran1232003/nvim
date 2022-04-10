@@ -33,6 +33,7 @@ return require("packer").startup(function(use)
     -- #must have packages
 
     -- use 'jose-elias-alvarez/nvim-lsp-ts-utils'
+    use { 'BenGH28/neo-runner.nvim',run=':UpdateRemotePlugins' } -- C/C++
 
     -- fugitive seach
     use {'junegunn/fzf', run = function() vim.fn['fzf#install']() end}
