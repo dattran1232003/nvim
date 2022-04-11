@@ -29,7 +29,7 @@ require('plugins/plualine')          -- statusline
 require('plugins/vista')            -- tag viewer
 require('plugins/fzf')              -- fugitive search
 
-require('plugins/nerdtree')         -- file management
+-- require('plugins/nerdtree')         -- file management
 require('plugins/nerdcommenter')    -- commenter
 
 require('plugins/nvim-treesitter')  -- hightlight better
@@ -43,4 +43,6 @@ require('plugins/p_supertab')       -- supertab
 require('plugins/nvim-comment')     -- commenter
 require('plugins/nvim-dap')         -- debug tools
 require('plugins/telescope-nvim')   -- telescope
-require('plugins/indentLine')       -- indentLine
+-- require('plugins/indentLine')       -- indentLine
+require('plugins/neo-runner')       -- Runner for C++ in Neovim
+require('plugins/nvim-tree')        -- Nvim File Tree

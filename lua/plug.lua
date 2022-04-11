@@ -6,10 +6,13 @@ return require("packer").startup(function(use)
     -- must have packages
     use "neovim/nvim-lspconfig" -- lsp package
 
+    use 'kyazdani42/nvim-web-devicons'
+    use  'kyazdani42/nvim-tree.lua'
+
+
     use 'nvim-lua/plenary.nvim'
 
     use 'christoomey/vim-tmux-navigator' -- switch between panes
-    -- use {'knubie/vim-kitty-navigator', run='cp ./*.py ~/.config/kitty/'} -- switch between kitty panes
 
     use 'liuchengxu/vista.vim' -- View and search LSP symbols, tags in Vim/NeoVim.
 
@@ -47,7 +50,6 @@ return require("packer").startup(function(use)
     -- syntax highlight, colors & icons
     use "chr4/nginx.vim"
     use 'ryanoasis/vim-devicons'
-    use 'kyazdani42/nvim-web-devicons'
     use 'xiyaowong/nvim-transparent'
     -- use { "morhetz/gruvbox" }
 
@@ -75,18 +77,5 @@ return require("packer").startup(function(use)
     -- image viewer
     use {'edluffy/hologram.nvim'}
 
-    -- autocompletions & snippets
-    -- use {
-    --   "hrsh7th/nvim-cmp",
-    --   requires = {
-    --     "hrsh7th/vim-vsnip",
-    --     "hrsh7th/cmp-buffer",
-    --     'hrsh7th/cmp-nvim-lsp', -- LSP source for nvim-cmp
-    --     'saadparwaiz1/cmp_luasnip', -- Snippets source for nvim-cmp
-    --     'L3MON4D3/LuaSnip', -- snippet
-    --     'hrsh7th/vim-vsnip', -- vscode snippet
-    --     'hrsh7th/vim-vsnip-integ',
-    --   }
-    -- }
 
 end)
