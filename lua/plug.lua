@@ -20,7 +20,6 @@ return require("packer").startup(function(use)
     use 'tpope/vim-repeat'   -- repeating for vim-surround
     use 'tpope/vim-surround' -- work with bracket, html tags,...
 
-    use 'preservim/nerdtree' -- file management
     use "terrortylor/nvim-comment" -- commenter
 
     use {'neoclide/coc.nvim', branch='release'} -- COC
@@ -50,13 +49,11 @@ return require("packer").startup(function(use)
     -- syntax highlight, colors & icons
     use "chr4/nginx.vim"
     use 'ryanoasis/vim-devicons'
-    use 'xiyaowong/nvim-transparent'
-    -- use { "morhetz/gruvbox" }
+    -- use 'xiyaowong/nvim-transparent'
 
     -- use 'tanvirtin/monokai.nvim'
     use "EdenEast/nightfox.nvim"
 
-    use 'tiagofumo/vim-nerdtree-syntax-highlight' -- syntax highlight for nerdtree
     use {'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
     use 'nvim-treesitter/nvim-treesitter-angular'
     -- use 'nvim-treesitter/nvim-tree-docs'

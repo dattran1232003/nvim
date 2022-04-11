@@ -24,7 +24,7 @@ local list = {
   { key = "K",                            action = "first_sibling" },
   { key = "J",                            action = "last_sibling" },
   { key = "I",                            action = "toggle_git_ignored" },
-  { key = "H",                            action = "toggle_dotfiles" },
+  { key = "h",                            action = "toggle_dotfiles" }, --
   { key = "R",                            action = "refresh" },
   { key = "a",                            action = "create" },
   { key = "d",                            action = "remove" },
@@ -71,8 +71,8 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     relativenumber = false,
     signcolumn = "yes",
     mappings = {
-      custom_only = false,
-      list,
+      custom_only = true,
+      list = list,
     },
   },
   renderer = {
@@ -110,9 +110,9 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     },
   },
   filters = {
-    dotfiles = false,
+    dotfiles = true, --
     custom = {},
-    exclude = {},
+    exclude = {'node_modules'},
   },
   git = {
     enable = true,
@@ -127,7 +127,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     },
     open_file = {
       quit_on_open = false,
-      resize_window = false,
+      resize_window = true,
       window_picker = {
         enable = true,
         chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
