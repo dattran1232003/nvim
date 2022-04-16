@@ -46,3 +46,4 @@ require('plugins/telescope-nvim')   -- telescope
 -- require('plugins/indentLine')       -- indentLine
 require('plugins/neo-runner')       -- Runner for C++ in Neovim
 require('plugins/nvim-tree')        -- Nvim File Tree
+require('plugins/barbar')           -- Tab config for neovim

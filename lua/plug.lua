@@ -74,5 +74,9 @@ return require("packer").startup(function(use)
     -- image viewer
     use {'edluffy/hologram.nvim'}
 
+    use {
+      'romgrk/barbar.nvim',
+      requires = {'kyazdani42/nvim-web-devicons'}
+    }
 
 end)

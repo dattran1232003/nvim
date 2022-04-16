@@ -18,7 +18,6 @@
 
   "tsserver.formatOnType": true,
 
-  "eslint.enable": true,
   "eslint.packageManager": "yarn",
 
   "prettier.useTabs": false,
