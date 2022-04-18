@@ -56,7 +56,7 @@ map('i', '˚', '<Esc>:m .-2<CR>==gi', { noremap = true })
 map ('v', '∆', ":m '>+1<CR>gv=gv", { noremap = true })
 map ('v', '˚', ":m '<-2<CR>gv=gv", { noremap = true })
 
--- for Debian linux
+-- move line up/down for Debian linux
 map('n', '<M-j>', ':m .+1<CR>==', { noremap = true })
 map('n', '<M-k>', ':m .-2<CR>==', { noremap = true })
 
@@ -76,8 +76,8 @@ map('n', '<Leader>p' , ':tabprevious<CR>', { noremap = true })
 
 
 -- for Debian linux
-map('n', '<M-t>', ':tabnew .<CR>', { noremap=true, silent=true })
-map('n', '<M-w>', ':tabclose<CR>', { noremap=true, silent=true })
+-- map('n', '<M-t>', ':tabnew .<CR>', { noremap=true, silent=true })
+-- map('n', '<M-w>', ':tabclose<CR>', { noremap=true, silent=true })
 
 -- switch tab using leander + number
 -- map('n', '<leader>1', '1gt', { noremap=true })

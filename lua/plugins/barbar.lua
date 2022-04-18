@@ -6,11 +6,11 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- Move to previous/next
-map('n', '<A-,>', ':BufferPrevious<CR>', opts)
-map('n', '<A-.>', ':BufferNext<CR>', opts)
+-- map('n', '<S-tab>', ':BufferPrevious<CR>', opts)
+-- map('n', '<C-S-tab>', ':BufferNext<CR>', opts)
 -- Re-order to previous/next
-map('n', '<C-<>', ':BufferMovePrevious<CR>', opts)
-map('n', '<C->>', ' :BufferMoveNext<CR>', opts)
+map('n', '<M-<>', ':BufferMovePrevious<CR>', opts)
+map('n', '<M->>', ' :BufferMoveNext<CR>', opts)
 -- Goto buffer in position...
 map('n', '<Leader>1', ':BufferGoto 1<CR>', opts)
 map('n', '<Leader>2', ':BufferGoto 2<CR>', opts)
@@ -33,8 +33,12 @@ map('n', '<M-7>', ':BufferGoto 7<CR>', opts)
 map('n', '<M-8>', ':BufferGoto 8<CR>', opts)
 map('n', '<M-9>', ':BufferGoto 9<CR>', opts)
 map('n', '<M-0>', ':BufferLast<CR>', opts)
--- Close buffer
+-- Close buffe<LeftMouse>r
 map('n', '<Leader>tc', ':BufferClose<CR>', opts)
+
+-- map('n', '<M-t>', ':tabnew .<CR>', { noremap=true, silent=true })
+map('n', '<M-w>', ':BufferClose<CR>', { noremap=true, silent=true })
+
 -- Wipeout buffer
 --                 :BufferWipeout<CR>
 -- Close commands
