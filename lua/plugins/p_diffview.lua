@@ -6,12 +6,12 @@ require'diffview'.setup {
   enhanced_diff_hl = false, -- See ':h diffview-config-enhanced_diff_hl'
   use_icons = true,         -- Requires nvim-web-devicons
   icons = {                 -- Only applies when use_icons is true.
-    folder_closed = "?",
-    folder_open = "?",
+    -- folder_closed = "?",
+    -- folder_open = "?",
   },
   signs = {
-    fold_closed = "?",
-    fold_open = "?",
+    -- fold_closed = "?",
+    -- fold_open = "?",
   },
   file_panel = {
     position = "left",            -- One of 'left', 'right', 'top', 'bottom'

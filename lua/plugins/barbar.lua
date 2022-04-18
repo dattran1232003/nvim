@@ -36,7 +36,7 @@ map('n', '<M-0>', ':BufferLast<CR>', opts)
 -- Close buffe<LeftMouse>r
 map('n', '<Leader>tc', ':BufferClose<CR>', opts)
 
--- map('n', '<M-t>', ':tabnew .<CR>', { noremap=true, silent=true })
+map('n', '<M-t>', ':tabnew .<CR>', { noremap=true, silent=true })
 map('n', '<M-w>', ':BufferClose<CR>', { noremap=true, silent=true })
 
 -- Wipeout buffer
