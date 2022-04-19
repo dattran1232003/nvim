@@ -25,9 +25,10 @@ return require("packer").startup(function(use)
     use {'neoclide/coc.nvim', branch='release'} -- COC
     use 'mfussenegger/nvim-dap' -- debug
 
+    use { 'tpope/vim-abolish' } -- search & replace
+
     -- telescope
     use { 'nvim-lua/popup.nvim' }
-    use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
     use  'nvim-telescope/telescope-dap.nvim'
 
