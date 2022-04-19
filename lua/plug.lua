@@ -37,7 +37,7 @@ return require("packer").startup(function(use)
     use { 'BenGH28/neo-runner.nvim',run=':UpdateRemotePlugins' } -- C/C++
 
     -- fugitive seach
-    use {'junegunn/fzf', run = function() vim.fn['fzf#install']() end}
+    -- use {'junegunn/fzf', run = function() vim.fn['fzf#install']() end}
     use 'junegunn/fzf.vim'
 
     -- use 'Yggdroot/indentLine' -- show vertical line
