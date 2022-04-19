@@ -9,8 +9,8 @@ local opts = { noremap = true, silent = true }
 -- map('n', '<S-tab>', ':BufferPrevious<CR>', opts)
 -- map('n', '<C-S-tab>', ':BufferNext<CR>', opts)
 -- Re-order to previous/next
-map('n', '<M-<>', ':BufferMovePrevious<CR>', opts)
-map('n', '<M->>', ' :BufferMoveNext<CR>', opts)
+map('n', '<leader><S-tab>', ':BufferPrevious<CR>', opts)
+map('n', '<leader><tab>', ' :BufferNext<CR>', opts)
 -- Goto buffer in position...
 map('n', '<Leader>1', ':BufferGoto 1<CR>', opts)
 map('n', '<Leader>2', ':BufferGoto 2<CR>', opts)
