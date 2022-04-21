@@ -34,12 +34,6 @@ map('', '<right>', '<nop>', {noremap = true})
 -- map('n', '<leader>s', ':w<CR>', default_opts)
 -- map('i', '<leader>s', '<C-c>:w<CR>', default_opts)
 
--- move around splits using Ctrl + {h,j,k,l}
-map('n', '<C-h>', '<C-w>h', default_opts)
-map('n', '<C-j>', '<C-w>j', default_opts)
-map('n', '<C-k>', '<C-w>k', default_opts)
-map('n', '<C-l>', '<C-w>l', default_opts)
-
 -- Close all windows and exit from neovim
 map('n', '<leader>q', ':quitall<CR>', default_opts)
 
@@ -152,8 +146,9 @@ map('n', '<LeftDrag>', '<LeftMouse>',  default_opts)
 map('', '<C-m>', ':Vista<CR>', default_opts)  -- open/close vista window
 
 -- vim-tmux-navigator
+g.tmux_navigator_no_mappings = 1
 map('n', '<c-h>', ':TmuxNavigateLeft<cr>', default_opts)
-map('n', '<c-j', ':TmuxNavigateDown<cr>', default_opts)
-map('n', '<c-k', ':TmuxNavigateUp<cr>', default_opts)
-map('n', '<c-h', ':TmuxNavigateRight<cr>', default_opts)
+map('n', '<c-j>', ':TmuxNavigateDown<cr>', default_opts)
+map('n', '<c-k>', ':TmuxNavigateUp<cr>', default_opts)
+map('n', '<c-l>', ':TmuxNavigateRight<cr>', default_opts)
 map('n', '<c-\\', ':TmuxNavigatePrevios<cr>', default_opts)
