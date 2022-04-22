@@ -17,8 +17,8 @@ Website: https://github.com/brainfucksec/neovim-lua
 -----------------------------------------------------------
 --
 require('plug')                     -- plugins
-require('keymaps')                  -- keymapsrequire('plug')
 require('settings')                 -- settings
+require('keymaps')                  -- keymapsrequire('plug')
 
 --CUSTOM PLUGINS
 
