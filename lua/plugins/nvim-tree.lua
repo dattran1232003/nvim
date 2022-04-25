@@ -157,5 +157,5 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
 
 
 -- NVIM KEY MAPPINGS
-map('n', '`', ":lua require'helpers/nvim-tree-barbar'.toggle(false)<cr>", { noremap = false, silent = true })
-map('n', '<F4>', ":lua require'helpers/nvim-tree-barbar'.toggle(true)<cr>", { noremap = false, silent = true })
+map('n', '`', ':NvimTreeToggle<CR>', { noremap = false, silent = true })
+map('n', '<F4>', ':NvimTreeFindFileToggle<CR>', { noremap = false, silent = true })
