@@ -31,6 +31,7 @@ return require("packer").startup(function(use)
     use { 'nvim-lua/popup.nvim' }
     use 'nvim-telescope/telescope.nvim'
     use  'nvim-telescope/telescope-dap.nvim'
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
     -- #must have packages
 
@@ -49,7 +50,7 @@ return require("packer").startup(function(use)
     -- syntax highlight, colors & icons
     use "chr4/nginx.vim"
     use 'ryanoasis/vim-devicons'
-    -- use 'xiyaowong/nvim-transparent'
+    use 'xiyaowong/nvim-transparent'
 
     -- use 'tanvirtin/monokai.nvim'
     use "EdenEast/nightfox.nvim"
