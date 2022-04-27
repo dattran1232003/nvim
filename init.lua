@@ -16,6 +16,7 @@ Website: https://github.com/brainfucksec/neovim-lua
 -- Import Lua modules
 -----------------------------------------------------------
 --
+require('keymaps')                  -- keymapsrequire('plug')
 require('plug')                     -- plugins
 
 --CUSTOM PLUGINS
@@ -46,4 +47,3 @@ require('plugins/nvim-tree')        -- Nvim File Tree
 require('plugins/barbar')           -- Tab config for neovim
 
 require('settings')                 -- settings
-require('keymaps')                  -- keymapsrequire('plug')

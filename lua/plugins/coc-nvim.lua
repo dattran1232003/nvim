@@ -41,7 +41,7 @@ map('n', 'gr', '<Plug>(coc-references)', opts)
 map('n', 'K', ':call Show_documentation()<CR>', { noremap=true, silent=true })
 
 -- rename
-map('n', '<leader>rn', '<Plug>(coc-rename)', opts)
+map('n', '<leader>rn', '<Plug>(coc-rename)', { noremap=false, silent=true })
 
 -- action
 map('n', '<leader>a', '<Plug>(coc-codeaction)', opts)
