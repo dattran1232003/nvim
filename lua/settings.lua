@@ -16,6 +16,7 @@ local opt = vim.opt             -- lobal/buffer/windows-scoped options
 -- General
 -----------------------------------------------------------
 g.mapleader = ' '         -- change leader
+opt.laststatus = 3          -- 3 is global status bar
 opt.mouse = 'nicr'            -- enable mouse for all modes except visual
 opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 opt.swapfile = false          -- don't use swapfile
@@ -174,3 +175,4 @@ augroup end
 -----------------------------------------------------------
 opt.completeopt = 'menuone,noselect,noinsert' -- completion options
 opt.shortmess = 'c' 	-- don't show completion messages
+opt.laststatus = 3          -- 3 is global status bar

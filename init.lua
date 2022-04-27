@@ -17,8 +17,6 @@ Website: https://github.com/brainfucksec/neovim-lua
 -----------------------------------------------------------
 --
 require('plug')                     -- plugins
-require('settings')                 -- settings
-require('keymaps')                  -- keymapsrequire('plug')
 
 --CUSTOM PLUGINS
 
@@ -27,7 +25,6 @@ require('keymaps')                  -- keymapsrequire('plug')
 
 require('plugins/plualine')          -- statusline
 require('plugins/vista')            -- tag viewer
-require('plugins/fzf')              -- fugitive search
 
 -- require('plugins/nerdtree')         -- file management
 require('plugins/nerdcommenter')    -- commenter
@@ -47,3 +44,6 @@ require('plugins/telescope-nvim')   -- telescope
 require('plugins/neo-runner')       -- Runner for C++ in Neovim
 require('plugins/nvim-tree')        -- Nvim File Tree
 require('plugins/barbar')           -- Tab config for neovim
+
+require('settings')                 -- settings
+require('keymaps')                  -- keymapsrequire('plug')
