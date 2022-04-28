@@ -16,7 +16,9 @@
     "cpp"
   ],
 
+  "tsserver.log": "normal",
   "tsserver.formatOnType": true,
+  "tsserver.disableAutomaticTypeAcquisition": false,
 
   "eslint.packageManager": "yarn",
 
@@ -33,6 +35,8 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
+
+  "angular.log": "normal",
 
   "git.addGBlameToVirtualText": true,
   "git.virtualTextPrefix": "    ",

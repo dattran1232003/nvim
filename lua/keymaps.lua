@@ -12,6 +12,8 @@ local default_opts = {noremap = true, silent = true}
 -----------------------------------------------------------
 -- Neovim shortcuts:
 -----------------------------------------------------------
+g.mapleader = ' '         -- change leader
+
 -- source lua file
 map('n', '<leader>sv', ':luafile ~/.config/nvim/init.lua<cr>', { noremap = true })
 
