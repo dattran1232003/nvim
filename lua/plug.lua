@@ -24,13 +24,14 @@ return require("packer").startup(function(use)
 
     use {'neoclide/coc.nvim', branch='release'} -- COC
     use 'mfussenegger/nvim-dap' -- debug
-    use {
-      'nvim-telescope/telescope-dap.nvim',
-      requires = {
-        'nvim-telescope/telescope.nvim',
-         'nvim-lua/plenary.nvim'
-        }
-      }
+
+    use { 'tpope/vim-abolish' } -- search & replace
+
+    -- telescope
+    use { 'nvim-lua/popup.nvim' }
+    use 'nvim-telescope/telescope.nvim'
+    use  'nvim-telescope/telescope-dap.nvim'
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
     -- #must have packages
 
@@ -38,7 +39,7 @@ return require("packer").startup(function(use)
     use { 'BenGH28/neo-runner.nvim',run=':UpdateRemotePlugins' } -- C/C++
 
     -- fugitive seach
-    use {'junegunn/fzf', run = function() vim.fn['fzf#install']() end}
+    -- use {'junegunn/fzf', run = function() vim.fn['fzf#install']() end}
     use 'junegunn/fzf.vim'
 
     -- use 'Yggdroot/indentLine' -- show vertical line
@@ -49,7 +50,7 @@ return require("packer").startup(function(use)
     -- syntax highlight, colors & icons
     use "chr4/nginx.vim"
     use 'ryanoasis/vim-devicons'
-    -- use 'xiyaowong/nvim-transparent'
+    use 'xiyaowong/nvim-transparent'
 
     -- use 'tanvirtin/monokai.nvim'
     use "EdenEast/nightfox.nvim"
@@ -74,5 +75,9 @@ return require("packer").startup(function(use)
     -- image viewer
     use {'edluffy/hologram.nvim'}
 
+    use {
+      'romgrk/barbar.nvim',
+      requires = {'kyazdani42/nvim-web-devicons'}
+    }
 
 end)

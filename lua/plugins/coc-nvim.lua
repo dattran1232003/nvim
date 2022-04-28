@@ -3,7 +3,6 @@
 -----------------------------------------------------------
 
 local g = vim.g
-local exec = vim.api.nvim_exec
 local map = vim.api.nvim_set_keymap
 
 local opts = { noremap=false, silent=true  }
@@ -41,7 +40,7 @@ map('n', 'gr', '<Plug>(coc-references)', opts)
 map('n', 'K', ':call Show_documentation()<CR>', { noremap=true, silent=true })
 
 -- rename
-map('n', '<leader>rn', '<Plug>(coc-rename)', opts)
+map('n', '<leader>rn', '<Plug>(coc-rename)', { noremap=false, silent=true })
 
 -- action
 map('n', '<leader>a', '<Plug>(coc-codeaction)', opts)
@@ -56,12 +55,12 @@ map('n' , ']c', '<Plug>(coc-git-nextconflict)', { noremap=false } )
 -----------------------------------------------------------
 -- Auto Commands
 -----------------------------------------------------------
-exec([[
+vim.api.nvim_exec([[
 autocmd CursorHold * silent call CocActionAsync('highlight')
 ]], false)
 
 
-exec([[
+vim.api.nvim_exec([[
 autocmd FileType scss setl iskeyword+=@-@
 ]], false)
 
@@ -79,7 +78,7 @@ autocmd FileType scss setl iskeyword+=@-@
 -----------------------------------------------------------
 -- Custom func
 -----------------------------------------------------------
-exec([[
+vim.api.nvim_exec([[
 
 function! Show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -94,7 +93,7 @@ endfunction
 ]], false)
 
 
-exec([[
+vim.api.nvim_exec([[
 augroup JsonToJsonc
     autocmd! FileType json set filetype=jsonc
 augroup END

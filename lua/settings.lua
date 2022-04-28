@@ -15,7 +15,7 @@ local opt = vim.opt             -- lobal/buffer/windows-scoped options
 -----------------------------------------------------------
 -- General
 -----------------------------------------------------------
-g.mapleader = ' '         -- change leader
+opt.laststatus = 3          -- 3 is global status bar
 opt.mouse = 'nicr'            -- enable mouse for all modes except visual
 opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 opt.swapfile = false          -- don't use swapfile
@@ -107,7 +107,7 @@ opt.termguicolors = true      -- enable 24-bit RGB colors
 -- g.gruvbox_italic=1
 -- g.gruvbox_invert_selection=0
 
-cmd[[colorscheme duskfox]]    -- set colorscheme
+cmd[[colorscheme nordfox]]    -- set colorscheme
 
 -- cursor line block color
 -- ref: https://stackoverflow.com/questions/6230490/how-i-can-change-cursor-color-in-color-scheme-vim
@@ -174,3 +174,4 @@ augroup end
 -----------------------------------------------------------
 opt.completeopt = 'menuone,noselect,noinsert' -- completion options
 opt.shortmess = 'c' 	-- don't show completion messages
+opt.laststatus = 3          -- 3 is global status bar

@@ -12,6 +12,8 @@ local default_opts = {noremap = true, silent = true}
 -----------------------------------------------------------
 -- Neovim shortcuts:
 -----------------------------------------------------------
+g.mapleader = ' '         -- change leader
+
 -- source lua file
 map('n', '<leader>sv', ':luafile ~/.config/nvim/init.lua<cr>', { noremap = true })
 
@@ -34,12 +36,6 @@ map('', '<right>', '<nop>', {noremap = true})
 -- map('n', '<leader>s', ':w<CR>', default_opts)
 -- map('i', '<leader>s', '<C-c>:w<CR>', default_opts)
 
--- move around splits using Ctrl + {h,j,k,l}
-map('n', '<C-h>', '<C-w>h', default_opts)
-map('n', '<C-j>', '<C-w>j', default_opts)
-map('n', '<C-k>', '<C-w>k', default_opts)
-map('n', '<C-l>', '<C-w>l', default_opts)
-
 -- Close all windows and exit from neovim
 map('n', '<leader>q', ':quitall<CR>', default_opts)
 
@@ -56,7 +52,7 @@ map('i', '˚', '<Esc>:m .-2<CR>==gi', { noremap = true })
 map ('v', '∆', ":m '>+1<CR>gv=gv", { noremap = true })
 map ('v', '˚', ":m '<-2<CR>gv=gv", { noremap = true })
 
--- for Debian linux
+-- move line up/down for Debian linux
 map('n', '<M-j>', ':m .+1<CR>==', { noremap = true })
 map('n', '<M-k>', ':m .-2<CR>==', { noremap = true })
 
@@ -76,30 +72,30 @@ map('n', '<Leader>p' , ':tabprevious<CR>', { noremap = true })
 
 
 -- for Debian linux
-map('n', '<M-t>', ':tabnew .<CR>', { noremap=true, silent=true })
-map('n', '<M-w>', ':tabclose<CR>', { noremap=true, silent=true })
+-- map('n', '<M-t>', ':tabnew .<CR>', { noremap=true, silent=true })
+-- map('n', '<M-w>', ':tabclose<CR>', { noremap=true, silent=true })
 
 -- switch tab using leander + number
-map('n', '<leader>1', '1gt', { noremap=true })
-map('n', '<leader>3', '3gt', { noremap=true })
-map('n', '<leader>2', '2gt', { noremap=true })
-map('n', '<leader>4', '4gt', { noremap=true })
-map('n', '<leader>5', '5gt', { noremap=true })
-map('n', '<leader>6', '6gt', { noremap=true })
-map('n', '<leader>7', '7gt', { noremap=true })
-map('n', '<leader>8', '8gt', { noremap=true })
-map('n', '<leader>9', '9gt', { noremap=true })
+-- map('n', '<leader>1', '1gt', { noremap=true })
+-- map('n', '<leader>3', '3gt', { noremap=true })
+-- map('n', '<leader>2', '2gt', { noremap=true })
+-- map('n', '<leader>4', '4gt', { noremap=true })
+-- map('n', '<leader>5', '5gt', { noremap=true })
+-- map('n', '<leader>6', '6gt', { noremap=true })
+-- map('n', '<leader>7', '7gt', { noremap=true })
+-- map('n', '<leader>8', '8gt', { noremap=true })
+-- map('n', '<leader>9', '9gt', { noremap=true })
 
 -- for debian linux (pop_os, ubuntu,...)
-map('n', '<M-1>', '1gt', { noremap=true })
-map('n', '<M-3>', '3gt', { noremap=true })
-map('n', '<M-2>', '2gt', { noremap=true })
-map('n', '<M-4>', '4gt', { noremap=true })
-map('n', '<M-5>', '5gt', { noremap=true })
-map('n', '<M-6>', '6gt', { noremap=true })
-map('n', '<M-7>', '7gt', { noremap=true })
-map('n', '<M-8>', '8gt', { noremap=true })
-map('n', '<M-9>', '9gt', { noremap=true })
+-- map('n', '<M-1>', '1gt', { noremap=true })
+-- map('n', '<M-3>', '3gt', { noremap=true })
+-- map('n', '<M-2>', '2gt', { noremap=true })
+-- map('n', '<M-4>', '4gt', { noremap=true })
+-- map('n', '<M-5>', '5gt', { noremap=true })
+-- map('n', '<M-6>', '6gt', { noremap=true })
+-- map('n', '<M-7>', '7gt', { noremap=true })
+-- map('n', '<M-8>', '8gt', { noremap=true })
+-- map('n', '<M-9>', '9gt', { noremap=true })
 
 -- new line in normal mode
 -- map('n',   '<space>', 'o<ESC>', { noremap = true })
@@ -152,8 +148,9 @@ map('n', '<LeftDrag>', '<LeftMouse>',  default_opts)
 map('', '<C-m>', ':Vista<CR>', default_opts)  -- open/close vista window
 
 -- vim-tmux-navigator
+g.tmux_navigator_no_mappings = 1
 map('n', '<c-h>', ':TmuxNavigateLeft<cr>', default_opts)
-map('n', '<c-j', ':TmuxNavigateDown<cr>', default_opts)
-map('n', '<c-k', ':TmuxNavigateUp<cr>', default_opts)
-map('n', '<c-h', ':TmuxNavigateRight<cr>', default_opts)
+map('n', '<c-j>', ':TmuxNavigateDown<cr>', default_opts)
+map('n', '<c-k>', ':TmuxNavigateUp<cr>', default_opts)
+map('n', '<c-l>', ':TmuxNavigateRight<cr>', default_opts)
 map('n', '<c-\\', ':TmuxNavigatePrevios<cr>', default_opts)

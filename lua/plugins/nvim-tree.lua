@@ -15,7 +15,7 @@ local list = {
   { key = {"<2-RightMouse>", "<C-]>"},    action = "cd" },
   { key = "<C-v>",                        action = "vsplit" },
   { key = "<C-x>",                        action = "split" },
-  { key = "<C-t>",                        action = "tabnew" },
+  { key = "<C-t>",                        action = "tabnew", silent = "true" },
   { key = "<",                            action = "prev_sibling" },
   { key = ">",                            action = "next_sibling" },
   { key = "P",                            action = "parent_node" },
@@ -52,7 +52,7 @@ local list = {
 require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   auto_reload_on_write = true,
   disable_netrw = false,
-  hide_root_folder = false,
+  -- hide_root_folder = false,
   hijack_cursor = false,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
@@ -126,10 +126,10 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
       global = false,
     },
     open_file = {
-      quit_on_open = false,
+      quit_on_open = true,
       resize_window = true,
       window_picker = {
-        enable = true,
+        enable = false,
         chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
         exclude = {
           filetype = { "notify", "packer", "qf", "diff", "fugitive", "fugitiveblame" },
