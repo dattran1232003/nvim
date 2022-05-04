@@ -7,6 +7,13 @@ local opt = vim.opt             -- lobal/buffer/windows-scoped options
 local g = vim.g                 -- global variables
 local default_opts = {noremap = true, silent = true}
 
+
+local function toggle_git_ignored_and_hidden(node)
+  local toggle = require("nvim-tree.actions.toggles")
+  toggle.git_ignored(node)
+  toggle.dotfiles(node)
+end
+
 -- KEY BINDINGS
 local list = {
   { key = {"<CR>", "o", "<2-LeftMouse>"}, action = "edit" },
@@ -23,8 +30,7 @@ local list = {
   { key = "<Tab>",                        action = "preview" },
   { key = "K",                            action = "first_sibling" },
   { key = "J",                            action = "last_sibling" },
-  { key = "I",                            action = "toggle_git_ignored" },
-  { key = "h",                            action = "toggle_dotfiles" }, --
+  { key = "I",                            action='',action_cb=toggle_git_ignored_and_hidden },
   { key = "R",                            action = "refresh" },
   { key = "a",                            action = "create" },
   { key = "d",                            action = "remove" },
