@@ -20,7 +20,8 @@ return require("packer").startup(function(use)
     use 'tpope/vim-repeat'   -- repeating for vim-surround
     use 'tpope/vim-surround' -- work with bracket, html tags,...
 
-    use "terrortylor/nvim-comment" -- commenter
+    -- use "terrortylor/nvim-comment" -- commenter
+    use { 'numToStr/Comment.nvim' }
 
     use {'neoclide/coc.nvim', branch='release'} -- COC
     use 'mfussenegger/nvim-dap' -- debug

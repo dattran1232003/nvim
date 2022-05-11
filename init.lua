@@ -20,31 +20,19 @@ require('keymaps')                  -- keymapsrequire('plug')
 require('plug')                     -- plugins
 
 --CUSTOM PLUGINS
-
--- require('plugins/nvim-cmp')         -- autocomplete
--- require('plugins/nvim-lspconfig')   -- language server configure
-
 require('plugins/plualine')          -- statusline
 require('plugins/vista')            -- tag viewer
-
--- require('plugins/nerdtree')         -- file management
-require('plugins/nerdcommenter')    -- commenter
-
 require('plugins/nvim-treesitter')  -- hightlight better
-
 require('plugins/coc-nvim')         -- use coc.nvim, native LSP is not stable yet
-
 require('plugins/p_diffview')       -- git diff viewing tools
--- require('plugins/p_nvim-transparent')
 require('plugins/markdown-preview') -- markdown preview
 require('plugins/p_supertab')       -- supertab
-require('plugins/nvim-comment')     -- commenter
 require('plugins/nvim-dap')         -- debug tools
 require('plugins/telescope-nvim')   -- telescope
--- require('plugins/indentLine')       -- indentLine
 require('plugins/neo-runner')       -- Runner for C++ in Neovim
 require('plugins/nvim-tree')        -- Nvim File Tree
 require('plugins/barbar')           -- Tab config for neovim
 require('plugins/p_vim-doge')
+require('plugins/comment-nvim')     -- commenter
 
 require('settings')                 -- settings
