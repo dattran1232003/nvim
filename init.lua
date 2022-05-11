@@ -45,5 +45,6 @@ require('plugins/telescope-nvim')   -- telescope
 require('plugins/neo-runner')       -- Runner for C++ in Neovim
 require('plugins/nvim-tree')        -- Nvim File Tree
 require('plugins/barbar')           -- Tab config for neovim
+require('plugins/p_vim-doge')
 
 require('settings')                 -- settings

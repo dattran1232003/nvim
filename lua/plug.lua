@@ -66,11 +66,11 @@ return require("packer").startup(function(use)
     use 'sindrets/diffview.nvim'
 
     --snippets
-    use "SirVer/ultisnips"
+    -- use "SirVer/ultisnips"
     use 'honza/vim-snippets'
 
     -- autocompletions
-    use {'kkoomen/vim-doge', run = vim.fn['doge#install']}
+    use {'kkoomen/vim-doge', run = ':call doge#install()'}
 
     -- image viewer
     use {'edluffy/hologram.nvim'}
