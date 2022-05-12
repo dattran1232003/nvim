@@ -70,7 +70,6 @@ map('n', '<Leader>tn', ':tabnew .<CR>', { noremap = true })
 map('n', '<Leader>n' , ':tabnext<CR>', { noremap = true })
 map('n', '<Leader>p' , ':tabprevious<CR>', { noremap = true })
 
-
 -- for Debian linux
 -- map('n', '<M-t>', ':tabnew .<CR>', { noremap=true, silent=true })
 -- map('n', '<M-w>', ':tabclose<CR>', { noremap=true, silent=true })
