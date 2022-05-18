@@ -13,7 +13,8 @@
     "typescriptreact",
     "lua",
     "c",
-    "cpp"
+    "cpp",
+    "go"
   ],
 
   "tsserver.log": "normal",

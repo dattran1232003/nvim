@@ -23,6 +23,7 @@ g.coc_global_extensions = {
   'coc-prettier',
   'coc-eslint',
   'coc-ccls',
+  'coc-go'
 }
 
 -----------------------------------------------------------
