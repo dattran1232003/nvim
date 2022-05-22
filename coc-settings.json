@@ -14,7 +14,8 @@
     "lua",
     "c",
     "cpp",
-    "go"
+    "go",
+    "sql"
   ],
 
   "tsserver.log": "normal",
@@ -62,5 +63,15 @@
   },
 
   "Lua.diagnostics.enable": true,
-  "Lua.diagnostics.globals": ["vim"]
+  "Lua.diagnostics.globals": ["vim"],
+
+  "sql.database": "postgresql",
+  "sql.formatOptions": {
+    "language": "postgresql",
+    "tabWidth": 2,
+    "keywordCase": "upper",
+    "linesBetweenQueries": 2,
+    "multilineLists": 4
+  },
+  "sql.lintOnSave": true
 }
