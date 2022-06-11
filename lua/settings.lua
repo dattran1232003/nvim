@@ -107,7 +107,7 @@ opt.termguicolors = true      -- enable 24-bit RGB colors
 -- g.gruvbox_italic=1
 -- g.gruvbox_invert_selection=0
 
-cmd[[colorscheme nordfox]]    -- set colorscheme
+cmd[[colorscheme nightfox]]    -- set colorscheme
 
 -- cursor line block color
 -- ref: https://stackoverflow.com/questions/6230490/how-i-can-change-cursor-color-in-color-scheme-vim
