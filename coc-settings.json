@@ -1,78 +1,80 @@
 {
-    "coc.preferences.jumpCommand": "tab drop",
-    "coc.preferences.formatOnType": true,
-    "coc.preferences.formatOnSaveFiletypes": [
-        "scss",
-        "html",
-        "sass",
-        "json",
-        "jsonc",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "lua",
-        "c",
-        "cpp",
-        "go",
-        "sql"
-    ],
+	"coc.preferences.jumpCommand": "tab drop",
+	"coc.preferences.formatOnType": true,
+	"coc.preferences.formatOnSaveFiletypes": [
+		"scss",
+		"sass",
+		"css",
+		"html",
+		"sass",
+		"json",
+		"jsonc",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"lua",
+		"c",
+		"cpp",
+		"go",
+		"sql"
+	],
 
-    "tsserver.log": "normal",
-    "tsserver.formatOnType": true,
-    "tsserver.disableAutomaticTypeAcquisition": false,
+	"tsserver.log": "normal",
+	"tsserver.formatOnType": true,
+	"tsserver.disableAutomaticTypeAcquisition": false,
 
-    "eslint.packageManager": "yarn",
+	"eslint.packageManager": "yarn",
 
-    "prettier.useTabs": true,
-    "prettier.tabWidth": 4,
-    "prettier.semi": true,
-    "prettier.singleQuote": true,
-    "prettier.trailingComma": "es5",
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"prettier.semi": true,
+	"prettier.singleQuote": true,
+	"prettier.trailingComma": "es5",
 
-    "javascript.validate.enable": true,
-    "typescript.validate.enable": true,
-    "javascript.suggestionActions.enabled": false,
+	"javascript.validate.enable": true,
+	"typescript.validate.enable": true,
+	"javascript.suggestionActions.enabled": false,
 
-    "emmet.excludeLanguages": ["css", "sass", "scss"],
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
+	"emmet.excludeLanguages": ["css", "sass", "scss"],
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
 
-    "angular.log": "normal",
+	"angular.log": "normal",
 
-    "git.addGBlameToVirtualText": true,
-    "git.virtualTextPrefix": "    ",
+	"git.addGBlameToVirtualText": true,
+	"git.virtualTextPrefix": "    ",
 
-    "languageserver": {
-        "ccls": {
-            "command": "ccls",
-            "filetypes": ["c", "cpp", "objc", "objcpp"],
-            "rootPatterns": [
-                ".ccls",
-                "compile_commands.json",
-                ".vim/",
-                ".git/",
-                ".hg/"
-            ],
-            "initializationOptions": {
-                "cache": {
-                    "directory": "/tmp/ccls"
-                }
-            }
-        }
-    },
+	"languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"filetypes": ["c", "cpp", "objc", "objcpp"],
+			"rootPatterns": [
+				".ccls",
+				"compile_commands.json",
+				".vim/",
+				".git/",
+				".hg/"
+			],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				}
+			}
+		}
+	},
 
-    "Lua.diagnostics.enable": true,
-    "Lua.diagnostics.globals": ["vim"],
+	"Lua.diagnostics.enable": true,
+	"Lua.diagnostics.globals": ["vim"],
 
-    "sql.database": "postgresql",
-    "sql.formatOptions": {
-        "language": "postgresql",
-        "tabWidth": 2,
-        "keywordCase": "upper",
-        "linesBetweenQueries": 2,
-        "multilineLists": 4
-    },
-    "sql.lintOnSave": true
+	"sql.database": "postgresql",
+	"sql.formatOptions": {
+		"language": "postgresql",
+		"tabWidth": 2,
+		"keywordCase": "upper",
+		"linesBetweenQueries": 2,
+		"multilineLists": 4
+	},
+	"sql.lintOnSave": true
 }
