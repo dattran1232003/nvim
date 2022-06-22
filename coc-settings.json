@@ -3,6 +3,8 @@
 	"coc.preferences.formatOnType": true,
 	"coc.preferences.formatOnSaveFiletypes": [
 		"scss",
+		"sass",
+		"css",
 		"html",
 		"sass",
 		"json",
@@ -24,8 +26,8 @@
 
 	"eslint.packageManager": "yarn",
 
-	"prettier.useTabs": false,
-	"prettier.tabWidth": 2,
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
 	"prettier.semi": true,
 	"prettier.singleQuote": true,
 	"prettier.trailingComma": "es5",
