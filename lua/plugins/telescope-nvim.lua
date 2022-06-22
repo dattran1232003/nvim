@@ -4,7 +4,7 @@ local telescope = require('telescope')
 -- nvim-telescope/telescope-dap.nvim
 telescope.setup {
   defaults = {
-    file_ignore_patterns = {"cache-loader", ".svg$"},
+    file_ignore_patterns = {"cache-loader", ".svg$", ".png$", ".jpeg$", ".jpg$", ".gif$", "*.ico$"},
     path_display = { 'smart' }
   },
   pickers ={
