@@ -151,5 +151,5 @@ g.tmux_navigator_no_mappings = 1
 map('n', '<c-h>', ':TmuxNavigateLeft<cr>', default_opts)
 map('n', '<c-j>', ':TmuxNavigateDown<cr>', default_opts)
 map('n', '<c-k>', ':TmuxNavigateUp<cr>', default_opts)
-map('n', '<c-l>', ':TmuxNavigateRight<cr>', default_opts)
+map('n', '<c-l>', ':TmuxNavigateRight<cr>', { silent=false })
 map('n', '<c-\\', ':TmuxNavigatePrevios<cr>', default_opts)
