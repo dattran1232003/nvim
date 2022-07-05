@@ -43,6 +43,8 @@
 
 	"angular.log": "normal",
 
+	"java.jdt.ls.vmargs": "-javaagent:\"/usr/local/share/lombok/lombok.jar\"",
+
 	"git.addGBlameToVirtualText": true,
 	"git.virtualTextPrefix": "    ",
 
