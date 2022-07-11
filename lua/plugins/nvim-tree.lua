@@ -9,7 +9,7 @@ local default_opts = {noremap = true, silent = true}
 
 
 local function toggle_git_ignored_and_hidden(node)
-  local toggle = require("nvim-tree.actions.toggles")
+  local toggle = require("nvim-tree.actions.tree-modifiers.toggles")
   toggle.git_ignored(node)
   toggle.dotfiles(node)
 end
