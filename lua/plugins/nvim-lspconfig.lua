@@ -7,7 +7,7 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
 
 require("nvim-lsp-installer").setup {}
--- require('modules.config.lsp.null-ls').setup()
+require('modules.config.lsp.null-ls').setup()
 require('modules.config.lsp.handlers').enable_format_on_save()
 
 local lspconfig = require('lspconfig')
@@ -35,7 +35,6 @@ local servers_config = {
   -- https://github.com/pedro757/emmet
   -- npm i -g ls_emmet (In order to override the default emmet-ls)
   emmet_ls = {
-    cmd = { 'ls_emmet', '--stdio' },
     filetypes = { 'html', 'css', 'scss', 'sass', 'javascript', 'javascriptreact', 'typescriptreact' },
   },
   jsonls = {

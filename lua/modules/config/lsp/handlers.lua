@@ -5,7 +5,7 @@ function M.enable_format_on_save()
     augroup format_on_save
       au!
       " au BufWritePre *.js,*.jsx,*.ts,*.tsx EslintFixAll
-      au BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 2000)
+      au BufWritePre * lua vim.lsp.buf.format({ async = false, timeout_ms = 5000 })
     augroup end
   ]]
 end
@@ -29,7 +29,7 @@ function M.toggle_format_on_save()
 end
 
 M.on_attach = function(client, bufnr)
-  require "lsp-format".on_attach(client)
+  client.server_capabilities.document_formatting = false
   local telescope_builtin = require 'telescope.builtin'
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'vim.lsp.omnifunc')
@@ -57,6 +57,11 @@ M.on_attach = function(client, bufnr)
   vim.api.nvim_exec([[
   autocmd CursorHold * lua vim.diagnostic.open_float(nil, {focus=false})
   ]], false)
+
+  if client.name == 'tsserver' then
+    -- client.server_capabilities.document_formatting = false -- 0.7 and earlier
+    client.server_capabilities.documentFormattingProvider = false -- 0.8 and later
+  end
 end
 
 

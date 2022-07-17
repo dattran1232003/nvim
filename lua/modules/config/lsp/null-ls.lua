@@ -7,11 +7,11 @@ M.setup = function()
   end
 
   local format = null_ls.builtins.formatting
-  -- local diagnostic = null_ls.builtins.diagnostics
+  local code_action = null_ls.builtins.code_actions
+  local diagnostics = null_ls.builtins.diagnostics
 
   null_ls.setup {
     sources = {
-      -- diagnostic.eslint,
       format.prettierd,
       format.stylua,
     },
@@ -19,4 +19,3 @@ M.setup = function()
 end
 
 return M
-
