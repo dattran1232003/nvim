@@ -20,7 +20,7 @@ opt.mouse = 'nicr'            -- enable mouse for all modes except visual
 opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 opt.swapfile = false          -- don't use swapfile
 g.shortmess = 'a'           -- avoid 'Hit ENTER to continue' prompt
-g.cursorhold_updatetime = 200 -- miliseconds
+g.cursorhold_updatetime = 500 -- milisecondsq
 
 -----------------------------------------------------------
 -- Neovim UI
