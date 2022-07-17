@@ -20,6 +20,7 @@ opt.mouse = 'nicr'            -- enable mouse for all modes except visual
 opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 opt.swapfile = false          -- don't use swapfile
 g.shortmess = 'a'           -- avoid 'Hit ENTER to continue' prompt
+g.cursorhold_updatetime = 200 -- miliseconds
 
 -----------------------------------------------------------
 -- Neovim UI
@@ -89,6 +90,28 @@ return s
 endfu
 set tabline=%!MyTabLine()
 ]], false)
+
+
+vim.diagnostic.config({
+  virtual_text = false,
+  signs = true,
+  update_in_insert = false,
+  underline = true,
+  severity_sort = false,
+  float = {
+   border = 'rounded'
+  },
+})
+
+vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(
+  vim.lsp.handlers.hover,
+  {border = 'rounded'}
+)
+
+vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
+  vim.lsp.handlers.signature_help,
+  {border = 'rounded'}
+)
 
 -----------------------------------------------------------
 -- Memory, CPU
