@@ -20,10 +20,11 @@ require('keymaps')                  -- keymapsrequire('plug')
 require('plug')                     -- plugins
 
 --CUSTOM PLUGINS
-require('plugins/plualine')          -- statusline
+require('plugins/plualine')         -- statusline
 require('plugins/vista')            -- tag viewer
 require('plugins/nvim-treesitter')  -- hightlight better
-require('plugins/coc-nvim')         -- use coc.nvim, native LSP is not stable yet
+require('plugins/nvim-lspconfig')   -- native lsp configuration
+require('plugins/nvim-cmp')         -- completion
 require('plugins/p_diffview')       -- git diff viewing tools
 require('plugins/markdown-preview') -- markdown preview
 require('plugins/p_supertab')       -- supertab
