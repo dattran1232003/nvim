@@ -61,12 +61,18 @@ M.on_attach = function(client, bufnr)
   if client.name == 'tsserver' then
     -- client.server_capabilities.document_formatting = false -- 0.7 and earlier
     client.server_capabilities.documentFormattingProvider = false -- 0.8 and later
+    M.enable_format_on_save()
+    -- vim.cmd([[command! LspToggleAutoFormat execute 'lua require("modules.config.lsp.handlers").toggle_format_on_save()']]
+    --   ,
+    --   false)
   end
+
+  if client.name == 'sumneko_lua' then
+    M.enable_format_on_save()
+  end
+
 end
 
 
-
-vim.cmd([[command! LspToggleAutoFormat execute 'lua require("modules.config.lsp.handlers").toggle_format_on_save()']],
-  false)
 
 return M
