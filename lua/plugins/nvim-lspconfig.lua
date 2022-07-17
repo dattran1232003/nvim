@@ -15,6 +15,7 @@ require("nvim-lsp-installer").setup {}
 local default_on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'vim.lsp.omnifunc')
+  client.resolved_capabilities.document_formatting = false
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
