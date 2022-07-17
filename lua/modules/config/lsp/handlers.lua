@@ -1,4 +1,4 @@
-local M  = {}
+local M = {}
 
 function M.enable_format_on_save()
   vim.cmd [[
@@ -29,14 +29,15 @@ function M.toggle_format_on_save()
 end
 
 M.on_attach = function(client, bufnr)
-  local telescope_builtin = require'telescope.builtin'
+  require "lsp-format".on_attach(client)
+  local telescope_builtin = require 'telescope.builtin'
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'vim.lsp.omnifunc')
   -- client.resolved_capabilities.document_formatting = false
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
-  local bufopts = { noremap=true, silent=true, buffer=bufnr }
+  local bufopts = { noremap = true, silent = true, buffer = bufnr }
   vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
   vim.keymap.set('n', 'gd', telescope_builtin.lsp_definitions, bufopts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
@@ -60,6 +61,7 @@ end
 
 
 
-vim.cmd ([[command! LspToggleAutoFormat execute 'lua require("modules.config.lsp.handlers").toggle_format_on_save()']], false)
+vim.cmd([[command! LspToggleAutoFormat execute 'lua require("modules.config.lsp.handlers").toggle_format_on_save()']],
+  false)
 
 return M

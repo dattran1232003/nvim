@@ -15,7 +15,6 @@ return require("packer").startup(function(use)
   use 'nvim-lua/plenary.nvim'
   use 'f-person/git-blame.nvim'
   use 'christoomey/vim-tmux-navigator' -- switch between panes
-  use 'liuchengxu/vista.vim' -- View and search LSP symbols, tags in Vim/NeoVim.
   use 'jiangmiao/auto-pairs' -- auto open/close pairs
   use 'tpope/vim-repeat' -- repeating for vim-surround
   use 'tpope/vim-surround' -- work with bracket, html tags,...
@@ -36,8 +35,8 @@ return require("packer").startup(function(use)
   use 'junegunn/fzf.vim'
   -- use 'Yggdroot/indentLine' -- show vertical line
   use 'hoob3rt/lualine.nvim'
-  use 'ervandew/supertab' -- easy use tab
-  use "chr4/nginx.vim"
+  -- use 'ervandew/supertab' -- easy use tab
+  -- use "chr4/nginx.vim"
   use 'ryanoasis/vim-devicons'
   use 'xiyaowong/nvim-transparent'
   use "EdenEast/nightfox.nvim"
