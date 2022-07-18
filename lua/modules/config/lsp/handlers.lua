@@ -55,7 +55,7 @@ M.on_attach = function(client, bufnr)
   vim.keymap.set('n', '<leader>f', vim.lsp.buf.formatting, bufopts)
 
   vim.api.nvim_exec([[
-  autocmd CursorHold * lua vim.diagnostic.open_float(nil, {focus=false})
+  autocmd CursorHold * silent lua vim.diagnostic.open_float(nil, {focus=false})
   ]], false)
 
   if client.name == 'tsserver' then

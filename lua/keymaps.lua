@@ -5,14 +5,14 @@
 
 local exec = vim.api.nvim_exec
 local map = vim.api.nvim_set_keymap
-local opt = vim.opt             -- lobal/buffer/windows-scoped options
-local g = vim.g                 -- global variables
-local default_opts = {noremap = true, silent = true}
+local opt = vim.opt -- lobal/buffer/windows-scoped options
+local g = vim.g -- global variables
+local default_opts = { noremap = true, silent = true }
 
 -----------------------------------------------------------
 -- Neovim shortcuts:
 -----------------------------------------------------------
-g.mapleader = ' '         -- change leader
+g.mapleader = ' ' -- change leader
 
 -- source lua file
 map('n', '<leader>sv', ':luafile ~/.config/nvim/init.lua<cr>', { noremap = true })
@@ -24,13 +24,13 @@ map('n', 'vA', 'ggVG', default_opts)
 map('n', '<leader>c', ':nohl<CR>', default_opts)
 
 -- map Esc to kk
-map('i', 'kk', '<Esc>', {noremap = true})
+map('i', 'kk', '<Esc>', { noremap = true })
 
 -- don't use arrow keys
-map('', '<up>', '<nop>', {noremap = true})
-map('', '<down>', '<nop>', {noremap = true})
-map('', '<left>', '<nop>', {noremap = true})
-map('', '<right>', '<nop>', {noremap = true})
+map('', '<up>', '<nop>', { noremap = true })
+map('', '<down>', '<nop>', { noremap = true })
+map('', '<left>', '<nop>', { noremap = true })
+map('', '<right>', '<nop>', { noremap = true })
 
 -- fast saving with <leader> and s
 -- map('n', '<leader>s', ':w<CR>', default_opts)
@@ -40,7 +40,7 @@ map('', '<right>', '<nop>', {noremap = true})
 map('n', '<leader>q', ':quitall<CR>', default_opts)
 
 -- Quick exit using jk
-map('i', 'jk', '<ESC>', { noremap=true })
+map('i', 'jk', '<ESC>', { noremap = true })
 
 -- move line up/down
 map('n', '˚', ':m .-2<CR>==', { noremap = true })
@@ -49,8 +49,8 @@ map('n', '∆', ':m .+1<CR>==', { noremap = true })
 map('i', '∆', '<Esc>:m .+1<CR>==gi', { noremap = true })
 map('i', '˚', '<Esc>:m .-2<CR>==gi', { noremap = true })
 
-map ('v', '∆', ":m '>+1<CR>gv=gv", { noremap = true })
-map ('v', '˚', ":m '<-2<CR>gv=gv", { noremap = true })
+map('v', '∆', ":m '>+1<CR>gv=gv", { noremap = true })
+map('v', '˚', ":m '<-2<CR>gv=gv", { noremap = true })
 
 -- move line up/down for Debian linux
 map('n', '<M-j>', ':m .+1<CR>==', { noremap = true })
@@ -59,16 +59,16 @@ map('n', '<M-k>', ':m .-2<CR>==', { noremap = true })
 map('i', '<M-j>', '<Esc>:m .+1<CR>==gi', { noremap = true })
 map('i', '<M-k>', '<Esc>:m .-2<CR>==gi', { noremap = true })
 
-map ('v', '<M-j>', ":m '>+1<CR>gv=gv", { noremap = true })
-map ('v', '<M-k>', ":m '<-2<CR>gv=gv", { noremap = true })
+map('v', '<M-j>', ":m '>+1<CR>gv=gv", { noremap = true })
+map('v', '<M-k>', ":m '<-2<CR>gv=gv", { noremap = true })
 
 -- tabs
 map('n', '<Leader>te', ':tabe%:h<CR>', { noremap = true })
 map('n', '<Leader>tc', ':tabclose<CR>', { noremap = true })
 map('n', '<Leader>tm', ':tabmove<CR>', { noremap = true })
 map('n', '<Leader>tn', ':tabnew .<CR>', { noremap = true })
-map('n', '<Leader>n' , ':tabnext<CR>', { noremap = true })
-map('n', '<Leader>p' , ':tabprevious<CR>', { noremap = true })
+map('n', '<Leader>n', ':tabnext<CR>', { noremap = true })
+map('n', '<Leader>p', ':tabprevious<CR>', { noremap = true })
 
 -- for Debian linux
 -- map('n', '<M-t>', ':tabnew .<CR>', { noremap=true, silent=true })
@@ -114,8 +114,8 @@ endfunction
 ]], false)
 map('v', '<Leader><Space>', ":call SortLines()<CR><CR>", default_opts)
 
-map('n','<leader>d','"_d', default_opts) -- delete without copy to clipboard
-map("x", '<leader>d','"_d', default_opts)
+map('n', '<leader>d', '"_d', default_opts) -- delete without copy to clipboard
+map("x", '<leader>d', '"_d', default_opts)
 map("x", 'p', '"_dP', default_opts) -- patse without copy to clipboard
 
 
@@ -136,7 +136,7 @@ map('n', 'H', 'zH', default_opts)
 map('n', 'L', 'zL', default_opts)
 
 -- disable select (visual mode) when drag mouse
-map('n', '<LeftDrag>', '<LeftMouse>',  default_opts)
+map('n', '<LeftDrag>', '<LeftMouse>', default_opts)
 
 
 -----------------------------------------------------------
@@ -144,12 +144,12 @@ map('n', '<LeftDrag>', '<LeftMouse>',  default_opts)
 -----------------------------------------------------------
 
 -- Vista
-map('', '<C-m>', ':Vista<CR>', default_opts)  -- open/close vista window
+map('', '<C-m>', ':Vista<CR>', default_opts) -- open/close vista window
 
 -- vim-tmux-navigator
 g.tmux_navigator_no_mappings = 1
 map('n', '<c-h>', ':TmuxNavigateLeft<cr>', default_opts)
 map('n', '<c-j>', ':TmuxNavigateDown<cr>', default_opts)
 map('n', '<c-k>', ':TmuxNavigateUp<cr>', default_opts)
-map('n', '<c-l>', ':TmuxNavigateRight<cr>', { silent=false })
+map('n', '<c-l>', ':TmuxNavigateRight<cr>', default_opts)
 map('n', '<c-\\', ':TmuxNavigatePrevios<cr>', default_opts)
