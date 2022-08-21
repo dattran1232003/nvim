@@ -13,7 +13,6 @@ return require("packer").startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
   use 'nvim-lua/plenary.nvim'
-  use 'f-person/git-blame.nvim'
   use 'christoomey/vim-tmux-navigator' -- switch between panes
   use 'jiangmiao/auto-pairs' -- auto open/close pairs
   use 'tpope/vim-repeat' -- repeating for vim-surround
@@ -31,12 +30,8 @@ return require("packer").startup(function(use)
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use { 'BenGH28/neo-runner.nvim', run = ':UpdateRemotePlugins' } -- C/C++
   -- fugitive seach
-  -- use {'junegunn/fzf', run = function() vim.fn['fzf#install']() end}
   use 'junegunn/fzf.vim'
-  -- use 'Yggdroot/indentLine' -- show vertical line
   use 'hoob3rt/lualine.nvim'
-  -- use 'ervandew/supertab' -- easy use tab
-  -- use "chr4/nginx.vim"
   use 'ryanoasis/vim-devicons'
   use 'xiyaowong/nvim-transparent'
   use "EdenEast/nightfox.nvim"
@@ -49,23 +44,30 @@ return require("packer").startup(function(use)
   -- git diff tools
   use 'sindrets/diffview.nvim'
 
+
+  -- git
+  use 'f-person/git-blame.nvim'
+  use {
+    'lewis6991/gitsigns.nvim',
+  }
+
   --snippets
   -- use "SirVer/ultisnips"
-  use 'honza/vim-snippets'
-
-  -- autocompletions
   use { 'kkoomen/vim-doge', run = ':call doge#install()' }
-  use {
-    'hrsh7th/nvim-cmp',
-    requires = { 'L3MON4D3/LuaSnip', 'hrsh7th/cmp-nvim-lsp' }
-  }
+  use { 'hrsh7th/nvim-cmp', 'hrsh7th/cmp-nvim-lsp' }
+  use { 'saadparwaiz1/cmp_luasnip' }
+  use { 'L3MON4D3/LuaSnip' }
+
 
   -- image viewer
   use { 'edluffy/hologram.nvim' }
 
-  use {
-    'romgrk/barbar.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons' }
-  }
+  -- tabs
+  use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
+
+  -- use {
+  --   'romgrk/barbar.nvim',
+  --   requires = { 'kyazdani42/nvim-web-devicons' }
+  -- }
 
 end)

@@ -20,6 +20,7 @@ require('keymaps') -- keymapsrequire('plug')
 require('plug') -- plugins
 
 --CUSTOM PLUGINS
+require('plugins/p_bufferline') -- Tab config for neovim
 require('plugins/plualine') -- statusline
 require('plugins/nvim-treesitter') -- hightlight better
 require('plugins/nvim-lspconfig') -- native lsp configuration
@@ -31,8 +32,9 @@ require('plugins/nvim-dap') -- debug tools
 require('plugins/telescope-nvim') -- telescope
 require('plugins/neo-runner') -- Runner for C++ in Neovim
 require('plugins/nvim-tree') -- Nvim File Tree
-require('plugins/barbar') -- Tab config for neovim
+-- require('plugins/barbar') -- Tab config for neovim
 require('plugins/p_vim-doge')
 require('plugins/comment-nvim') -- commenter
+require('plugins/gitsigns')
 
 require('settings') -- settings

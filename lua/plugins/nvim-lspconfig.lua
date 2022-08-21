@@ -21,7 +21,7 @@ local servers = {
   'pyright',
   'cssls',
   'emmet_ls',
-  'eslint',
+  -- 'eslint',
   'jsonls',
   'sumneko_lua',
   'tailwindcss',
