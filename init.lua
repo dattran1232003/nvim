@@ -36,5 +36,7 @@ require('plugins/nvim-tree') -- Nvim File Tree
 require('plugins/p_vim-doge')
 require('plugins/comment-nvim') -- commenter
 require('plugins/gitsigns')
+require('plugins/nvim-ts-autotag')
+require('plugins/nvim-autopairs')
 
 require('settings') -- settings

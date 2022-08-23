@@ -58,7 +58,7 @@ local servers_config = {
     settings = {
       ["rust-analyzer"] = {}
     }
-  }
+  },
 }
 
 local lsp_defaults = {

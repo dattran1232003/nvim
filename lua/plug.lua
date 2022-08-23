@@ -14,7 +14,8 @@ return require("packer").startup(function(use)
   use 'kyazdani42/nvim-tree.lua'
   use 'nvim-lua/plenary.nvim'
   use 'christoomey/vim-tmux-navigator' -- switch between panes
-  use 'jiangmiao/auto-pairs' -- auto open/close pairs
+  use 'windwp/nvim-autopairs' -- auto open/close pairs
+  use 'windwp/nvim-ts-autotag'
   use 'tpope/vim-repeat' -- repeating for vim-surround
   use 'tpope/vim-surround' -- work with bracket, html tags,...
   -- use "terrortylor/nvim-comment" -- commenter
@@ -46,17 +47,18 @@ return require("packer").startup(function(use)
 
 
   -- git
-  use 'f-person/git-blame.nvim'
+  -- use 'f-person/git-blame.nvim'
   use {
     'lewis6991/gitsigns.nvim',
   }
 
-  --snippets
+  --snippets & code completion
   -- use "SirVer/ultisnips"
   use { 'kkoomen/vim-doge', run = ':call doge#install()' }
   use { 'hrsh7th/nvim-cmp', 'hrsh7th/cmp-nvim-lsp' }
   use { 'saadparwaiz1/cmp_luasnip' }
   use { 'L3MON4D3/LuaSnip' }
+  use 'onsails/lspkind.nvim'
 
 
   -- image viewer
@@ -65,9 +67,6 @@ return require("packer").startup(function(use)
   -- tabs
   use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
 
-  -- use {
-  --   'romgrk/barbar.nvim',
-  --   requires = { 'kyazdani42/nvim-web-devicons' }
-  -- }
+
 
 end)

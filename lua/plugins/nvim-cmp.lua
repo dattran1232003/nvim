@@ -10,6 +10,7 @@ local cmp = require 'cmp'
 -- local luasnip = require 'luasnip'
 
 require('luasnip.loaders.from_vscode').lazy_load()
+local lspkind = require 'lspkind'
 
 cmp.setup({
   snippet = {
@@ -30,26 +31,15 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     ["<Tab>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
     ["<S-Tab>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
-    --[[ ["<S-Tab>"] = cmp.mapping.select_prev_item(),
-    ["<Tab>"] = cmp.mapping({
-          i = function(_)
-              if cmp.visible() then
-                  cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
-              elseif vim.fn["luasnip#expand_or_jumpable"]() == 1 then
-                  vim.api.nvim_feedkeys(t("<Plug>luasnip-expand-or-jump"), 'm', true)
-              else
-                  vim.api.nvim_feedkeys(t('<Tab>'), 'n', true)        -- fallback()
-
-              end
-          end,
-    }) ]]
   }),
   sources = cmp.config.sources({
-    { name = 'luasnip' }, -- For luasnip users.
-    { name = 'path' },
+    -- { name = 'path' },
+    -- { name = 'luasnip' }, -- For luasnip users.
     { name = 'nvim_lsp' },
     { name = 'buffer' },
-  })
+  }), formatting = {
+    format = lspkind.cmp_format({ with_text = false, maxwidth = 50 })
+  }
 })
 
 -- Set configuration for specific filetype.
@@ -78,3 +68,8 @@ cmp.setup.cmdline(':', {
     { name = 'cmdline' }
   })
 })
+
+vim.cmd [[
+  set completeopt=menuone,noinsert,noselect
+  highlight! default link CmpItemKind CmpItemMenuDefault
+]]
