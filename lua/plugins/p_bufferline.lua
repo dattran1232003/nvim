@@ -14,6 +14,14 @@ bufferline.setup({
     numbers = function(opts)
       return string.format('%s.', (opts.ordinal))
     end,
+    offsets = {
+      {
+        filetype = "NvimTree",
+        text = "File Explorer",
+        highlight = "Directory",
+        text_align = "left"
+      }
+    }
   },
   highlights = {
     separator = {
@@ -33,7 +41,7 @@ bufferline.setup({
     },
     fill = {
       bg = '#073642'
-    }
+    },
   },
 })
 

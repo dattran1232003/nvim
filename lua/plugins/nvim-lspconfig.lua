@@ -20,7 +20,7 @@ local handlers = require('modules.config.lsp.handlers')
 local servers = {
   'pyright',
   'cssls',
-  'emmet_ls',
+  -- 'emmet_ls',
   -- 'eslint',
   'jsonls',
   'sumneko_lua',
