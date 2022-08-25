@@ -42,19 +42,19 @@ map('n', '<leader>ds', ':Telescope dap frames<CR>', opts)
 
 map('n', '<leader>db', ':Telescope dap list_breakpoints<CR>', opts)
 
-map('n', ';f', "<cmd>Telescope find_files hidden=true<cr>", opts)
+map('n', '<c-p>', "<cmd>Telescope find_files hidden=true<cr>", opts)
 
-map('n', ';c', "<cmd>lua require'telescope.builtin'.grep_string({ search='' })<cr>", opts)
+map('n', '<c-n>', "<cmd>lua require'telescope.builtin'.grep_string({ search='' })<cr>", opts)
 
-vim.keymap.set('n', ';d', function()
+vim.keymap.set('n', '<leader>d', function()
   builtin.diagnostics()
 end)
 
-vim.keymap.set('n', ';r', function()
+vim.keymap.set('n', '<leader>r', function()
   builtin.live_grep()
 end)
 
-vim.keymap.set('n', ';;', function()
+vim.keymap.set('n', '<leader><leader>', function()
   builtin.resume()
 end)
 

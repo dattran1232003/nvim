@@ -38,5 +38,6 @@ require('plugins/comment-nvim') -- commenter
 require('plugins/gitsigns')
 require('plugins/nvim-ts-autotag')
 require('plugins/nvim-autopairs')
+require('plugins/goto-preview')
 
 require('settings') -- settings

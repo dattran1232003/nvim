@@ -42,6 +42,8 @@ return require("packer").startup(function(use)
   -- markdown preview
   use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
 
+  -- goto preview
+  use { 'rmagatti/goto-preview', }
   -- git diff tools
   use 'sindrets/diffview.nvim'
 
