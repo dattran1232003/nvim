@@ -90,6 +90,10 @@ M.on_attach = function(client, bufnr)
     if client.name == "sumneko_lua" then
         M.enable_format_on_save()
     end
+
+    if (client.name == "golangci_lint_ls") or (client.name == "gopls") then
+        M.enable_format_on_save()
+    end
 end
 
 return M
