@@ -13,12 +13,13 @@ M.setup = function()
 
     null_ls.setup({
         sources = {
-            formatting.prettierd,
+            -- formatting.prettierd,
+            formatting.prettier_d_slim,
             formatting.stylua,
             formatting.gofmt,
 
             code_actions.eslint_d,
-            code_actions.gitsigns,
+            -- code_actions.gitsigns,
 
             completion.luasnip,
 
