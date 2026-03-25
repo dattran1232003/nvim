@@ -6,7 +6,7 @@ return {
         files = {
           hidden = true,
           ignored = false,
-          -- exclude = { "node_modules", "dist", "build", ".git", "*.lock" },
+          exclude = { "node_modules", "dist", "build", ".git", "*.lock" },
         },
         grep = {
           hidden = true,
