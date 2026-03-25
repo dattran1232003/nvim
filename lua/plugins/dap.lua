@@ -1,4 +1,22 @@
 return {
+  -- DAP UI
+  {
+    "rcarriga/nvim-dap-ui",
+    dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
+    keys = {
+      { "<leader>du", function() require("dapui").toggle() end, desc = "Dap UI" },
+      { "<leader>de", function() require("dapui").eval() end, desc = "Eval", mode = { "n", "v" } },
+    },
+    config = function()
+      local dap = require("dap")
+      local dapui = require("dapui")
+      dapui.setup()
+      dap.listeners.after.event_initialized["dapui_config"] = function() dapui.open() end
+      dap.listeners.before.event_terminated["dapui_config"] = function() dapui.close() end
+      dap.listeners.before.event_exited["dapui_config"] = function() dapui.close() end
+    end,
+  },
+
   -- JavaScript/TypeScript debug adapter (vscode-js-debug)
   {
     "mxsdev/nvim-dap-vscode-js",
@@ -23,6 +41,7 @@ return {
       -- Alias adapters so launch.json "type" values resolve correctly
       dap.adapters.chrome = dap.adapters["pwa-chrome"]
       dap.adapters["node"] = dap.adapters["pwa-node"]
+      dap.adapters["node-terminal"] = dap.adapters["pwa-node"]
 
       -- Default configurations for JS/TS filetypes
       for _, ft in ipairs(js_filetypes) do
@@ -61,6 +80,7 @@ return {
         ["pwa-chrome"] = js_filetypes,
         ["pwa-node"] = js_filetypes,
         ["node"] = js_filetypes,
+        ["node-terminal"] = js_filetypes,
       })
     end,
   },
